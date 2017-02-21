@@ -21,10 +21,12 @@ JS файла в браузере в консоле будут выведены 
 --------
 Дан массив чисел. Найти максимальное значение, минимальное и среднеарифметическое значение.
 
-**Например:** дла массива = [18, 12, 98, 38, 13, 2, 54, 60, 77, 52], максимальное значение - 98, минимальное - 2, среднеарифметическое - 42.4.
+**Например:** дла массива `[18, 12, 98, 38, 13, 2, 54, 60, 77, 52]` максимальное значение - 98, минимальное - 2, среднеарифметическое - 42.4.
 
-    getStats([3, 37, 45, 80, 1, 50, 36, 75, 77, 26]) == [98, 2, 42.4];
-    getStats([86, 30, 70, 19, 68, 75, 10, 49, 26, 37]) == [86, 10, 47];
+```javascript
+getStats([3, 37, 45, 80, 1, 50, 36, 75, 77, 26]) == [98, 2, 42.4];
+getStats([86, 30, 70, 19, 68, 75, 10, 49, 26, 37]) == [86, 10, 47];
+```
 
 Задача 1
 --------
@@ -33,14 +35,17 @@ JS файла в браузере в консоле будут выведены 
 Для пустого массива результат всегда должен быть 0.
 
 **Входные данные:** Массив чисел.
+
 **Выходные данные:** Число.
 
 Примеры:
 
-    calcSum([0, 1, 2, 3, 4, 5]) == 30;
-    calcSum([1, 3, 5]) == 30;
-    calcSum([6]) == 36;
-    calcSum([]) == 0;
+```javascript
+calcSum([0, 1, 2, 3, 4, 5]) == 30;
+calcSum([1, 3, 5]) == 30;
+calcSum([6]) == 36;
+calcSum([]) == 0;
+```
 
 Задача 2
 --------
@@ -49,10 +54,13 @@ JS файла в браузере в консоле будут выведены 
 **Например:** дан массив `Q = [10, 22, 14, 10, 28, 10, 14, 62, 32]`. Значения 10 и 14 встречаются несколько раз,
 и нужно их убрать. В результате получим массив `A = [22, 28, 62, 32]`.
 
-    filterUnique([10, 22, 14, 10, 28, 10, 14, 62, 32]) == [22, 28, 62, 32];
-    filterUnique([3, 14, 15, 92, 6, 5, 35]) == [3, 14, 15, 92, 6, 5, 35];
-    filterUnique([8, 2, 2, 3, 2, 2, 8]) == [];
+Примеры:
 
+```javascript
+filterUnique([10, 22, 14, 10, 28, 10, 14, 62, 32]) == [22, 28, 62, 32];
+filterUnique([3, 14, 15, 92, 6, 5, 35]) == [3, 14, 15, 92, 6, 5, 35];
+filterUnique([8, 2, 2, 3, 8, 2, 2, 3]) == [];
+```
 
 Задача 3
 --------
@@ -61,13 +69,16 @@ JS файла в браузере в консоле будут выведены 
 Для этого задания, вы будете использовать латинский алфавит (A-Z). У вас есть текст с латинскими буквами и знаками препинания. Вы должны проверить является ли предложение панграммой или нет. Регистр не имеет значения.
 
 **Входные данные:** Строка
+
 **Выходные данные:** `true` (если предложение является панграммой) или `false`.
 
 Примеры:
 
-    isPangram("The quick brown fox jumps over the lazy dog.") == True //Каждая буква латинского алфавита встречается в данной строке хотя бы один раз
-    isPangram("ABCDEF.") == False
-
+```javascript
+isPangram("The quick brown fox jumps over the lazy dog.") == True //Каждая буква латинского алфавита
+                                                      //встречается в данной строке хотя бы один раз
+isPangram("ABCDEF.") == False
+```
 
 Задача 4
 --------
@@ -84,43 +95,48 @@ JS файла в браузере в консоле будут выведены 
 
 Примеры:
 
-    getTopLetter("CAATGCCATA") == "A";
-    getTopLetter("M7X72DRLlhMBHJzcTROVhy2xPYfVVoyWp9djVkR3FDYo4vsvRUyaq8WBKEk9Igdx") == "V";
-    
-    var song = "I'm gonna fight 'em off\n" +
-               "A seven nation army couldn't hold me back\n" +
-               "They're gonna rip it off\n" +
-               "Taking their time right behind my back\n" +
-    
-               "And I'm talking to myself at night\n" +
-               "Because I can't forget\n" +
-               "Back and forth through my mind\n" +
-               "Behind a cigarette\n" +
-    
-               "And the message coming from my eyes\n" +
-               "Says leave it alone";
-    
-    song = song.replace(/ /g, ''); //Уберём все пробелы
-    getTopLetter(song) == "e";
+```javascript
+getTopLetter("CAATGCCATA") == "A";
+getTopLetter("M7X72DRLlhMBHJzcTROVhy2xPYfVVoyWp9djVkR3FDYo4vsvRUyaq8WBKEk9Igdx") == "V";
+
+var song = "I'm gonna fight 'em off\n" +
+           "A seven nation army couldn't hold me back\n" +
+           "They're gonna rip it off\n" +
+           "Taking their time right behind my back\n" +
+
+           "And I'm talking to myself at night\n" +
+           "Because I can't forget\n" +
+           "Back and forth through my mind\n" +
+           "Behind a cigarette\n" +
+
+           "And the message coming from my eyes\n" +
+           "Says leave it alone";
+
+song = song.replace(/ /g, ''); //Уберём все пробелы
+getTopLetter(song) == "e";
+```
 
 Задача 5
 --------
 Дана матрица (может быть как квадратная, так и прямоугольная). Написать функцию, которая создаёт транспонированную матрицу.
 
 **Входные данные:** двумерный массив.
+
 **Выходные данные:** двумерный массив.
 
 Примеры:
 
-    getTransposed([["A", "C"],
-                   ["T", "G"]]) == [["A", "T"],
-                                    ["C", "G"]]
-    getTransposed([[-2, -1, 0, 1],
-                   [-1,  0, 1, 2],
-                   [ 0,  1, 2, 3]]) == [[-2, -1, 0],
-                                        [-1,  0, 1],
-                                        [ 0,  1, 2],
-                                        [ 1,  2, 3]]
+```javascript
+getTransposed([["A", "C"],
+               ["T", "G"]]) == [["A", "T"],
+                                ["C", "G"]]
+getTransposed([[-2, -1, 0, 1],
+               [-1,  0, 1, 2],
+               [ 0,  1, 2, 3]]) == [[-2, -1, 0],
+                                    [-1,  0, 1],
+                                    [ 0,  1, 2],
+                                    [ 1,  2, 3]]
+```
 
 Задача 6
 --------
@@ -128,24 +144,28 @@ JS файла в браузере в консоле будут выведены 
 
 Например, пусть есть три объекта:
 
-    var package0 = {'name': 'boots', 'weight': 10.3, 'price': 122, 'fragile': false, 'owner': 'Michael Caine'}
-    var package1 = {'price': 31.5, 'fragile': true, 'owner': 'Tom Cruise', 'address': 'Washington DC, Ave. 144/5'}
-    var package2 = {'price': 103.25, 'charged': true, 'fromCountry': 'India', 'volume': '10 L'}
-    mergeObjects([package0, package1, package2])
+```javascript
+var package0 = {'name': 'boots', 'weight': 10.3, 'price': 122, 'fragile': false, 'owner': 'Michael Caine'};
+var package1 = {'price': 31.5, 'fragile': true, 'owner': 'Tom Cruise', 'address': 'Washington DC, Ave. 144/5'};
+var package2 = {'price': 103.25, 'charged': true, 'fromCountry': 'India', 'volume': '10 L'};
+var result = mergeObjects([package0, package1, package2]);
+```
 
 После объединения этит объектов получится JavaScript объект:
 
-    {
-      name: ['boots'],
-      weight: [10.3],
-      price: [122, 31.5, 103.25],
-      fragile: [false, true],
-      owner: ['Michael Caine', 'Tom Cruise'],
-      address: ['Washington DC, Ave. 144/5'],
-      charged: [true],
-      fromCountry: ['India'],
-      volume: ['10 L']
-    }
+```javascript
+{
+  name: ['boots'],
+  weight: [10.3],
+  price: [122, 31.5, 103.25],
+  fragile: [false, true],
+  owner: ['Michael Caine', 'Tom Cruise'],
+  address: ['Washington DC, Ave. 144/5'],
+  charged: [true],
+  fromCountry: ['India'],
+  volume: ['10 L']
+}
+```
 
 Задача 7 "Что наша жизнь? Игра!" (\*)
 ------------
@@ -169,7 +189,7 @@ JS файла в браузере в консоле будут выведены 
 
 Представленный пример будет описан следующим образом:
 
-```
+```javascript
 [[0, 1, 0, 0, 0, 0, 0],
  [0, 0, 1, 0, 0, 0, 0],
  [1, 1, 1, 0, 0, 0, 0],
@@ -182,11 +202,12 @@ JS файла в браузере в консоле будут выведены 
 И если нам нужно подсчитать число живых клеток на 4-ом ходе, то как мы видим на изображении, ответ 15.
 
 **Входные данные:** Два аргумента. Начальное состояние, как массив массивов с числами 1 и 0. И номер шага, как целое число.
+
 **Выходные данные:** Число живых клеток на N-ом шаге, как число.
 
 Примеры:
 
-```
+```javascript
 lifeCounter([[0, 1, 0, 0, 0, 0, 0],
              [0, 0, 1, 0, 0, 0, 0],
              [1, 1, 1, 0, 0, 0, 0],
@@ -226,11 +247,14 @@ lifeCounter([[0, 1, 0, 0, 0, 0, 0],
 Ответ - 6 пешек прикрыто другими пешками.
 
 **Входные данные:** множество (Set) пар координат [столбец, строка]. Столбцы и строки нумераются начиная с нуля.
+
 **Выходные данные:** число.
 
 Примеры:
 
-    getSafePawns(Set([[3, 1], [2, 2], [4, 2], [1, 3], [3, 3], [5, 3], [6, 4]])) == 6; //Расположение пешек из примера выше
-    getSafePawns(Set([[1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [4, 4]])) == 1;
+```javascript
+getSafePawns(Set([[3, 1], [2, 2], [4, 2], [1, 3], [3, 3], [5, 3], [6, 4]])) == 6; //Расположение пешек из примера выше
+getSafePawns(Set([[1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [4, 4]])) == 1;
+```
 
 **Совет:** используйте класс Set и декомпозицию массивов.
