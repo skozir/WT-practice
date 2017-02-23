@@ -75,9 +75,9 @@ filterUnique([8, 2, 2, 3, 8, 2, 2, 3]) == [];
 Примеры:
 
 ```javascript
-isPangram("The quick brown fox jumps over the lazy dog.") == True //Каждая буква латинского алфавита
+isPangram("The quick brown fox jumps over the lazy dog.") == true //Каждая буква латинского алфавита
                                                       //встречается в данной строке хотя бы один раз
-isPangram("ABCDEF.") == False
+isPangram("ABCDEF.") == false
 ```
 
 Задача 4
