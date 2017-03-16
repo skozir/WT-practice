@@ -161,7 +161,10 @@ function task3() {
 	assertEqual(answer3, songs3, "Case #3");
 
 	// Case #4
-	var data4 = [
+	assertEqual([], [], "Case #4");
+
+	// Case #5
+	var data5 = [
 		{
 			"filename": "All I know.docx",
 			"size": 107,
@@ -179,9 +182,8 @@ function task3() {
 			"size": 5525840,
 		}
 	];
-	var songs4 = getSongs(data4);
-	assertEqual([["Стругацкие", "Трудно быть богом"]], songs4, "Case #4");
-
+	var songs5 = getSongs(data5);
+	assertEqual([["Стругацкие", "Трудно быть богом"]], songs5, "Case #5");
 }
 
 task3();
