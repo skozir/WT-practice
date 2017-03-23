@@ -1,4 +1,4 @@
-function getSongs(data) {
+﻿function getSongs(data) {
 	return [];
 }
 
