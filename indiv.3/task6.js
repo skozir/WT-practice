@@ -1,14 +1,13 @@
-function getTransposed(matrix) {
-	//Change this function
+function getReversed(matrix) {
 	return [[6.2]];
 }
 
-function assertEqualMatrix(expectedVal, actualVal, message) {
+function assertEqualMatrix(actualVal, expectedVal, message) {
 	if(matrixEqual(expectedVal, actualVal)) {
 		console.log("+", message);
 	}
 	else {
-		console.error("-", message);
+		console.error("-", message, "(Expected:", expectedVal, "; Actual:", actualVal, ")");
 	}
 }
 
@@ -38,63 +37,52 @@ function matrixEqual(mtrx1, mtrx2) {
 }
 
 function runTask6() {
-	assertEqualMatrix(getTransposed([["A", "C"],
+	assertEqualMatrix(getReversed([["A", "C"],
 	                                 ["T", "G"]]),
-	                  [["A", "T"],
-	                   ["C", "G"]],
+	                  [["G", "T"],
+	                   ["C", "A"]],
 	                  "Case #0");
 	
-	assertEqualMatrix(getTransposed([[-2, -1, 0, 1],
+	assertEqualMatrix(getReversed([[-2, -1, 0, 1],
 	                   [-1,  0, 1, 2],
 	                   [ 0,  1, 2, 3]]),
-	                  [[-2, -1, 0],
-	                   [-1,  0, 1],
-	                   [ 0,  1, 2],
-	                   [ 1,  2, 3]],
+	                  [[3, 2,  1,  0],
+	                   [2, 1,  0, -1],
+	                   [1, 0, -1, -2]],
 	                   "Case #1");
 
-	assertEqualMatrix(getTransposed([["$", "#", "%", "*", "^", "/", "}"]]),
-	                  [["$"],
-	                   ["#"],
-	                   ["%"],
-	                   ["*"],
-	                   ["^"],
-	                   ["/"],
-	                   ["}"]],
+	assertEqualMatrix(getReversed([["$", "#", "%", "*", "^", "/", "}"]]),
+	                  [["}", "/", "^", "*", "%", "#", "$"]],
 	                   "Case #2");
 
-	assertEqualMatrix(getTransposed([["G"],
-	                                 ["H"],
-	                                 ["I"],
-	                                 ["J"],
-	                                 ["K"],
-	                                 ["L"],
-	                                 ["M"]]),
-	                  [["G", "H", "I", "J", "K", "L", "M"]],
-	                   "Case #2");
-
-	assertEqualMatrix(getTransposed([["G"],
-	                                 ["H"],
-	                                 ["I"],
-	                                 ["J"],
-	                                 ["K"],
-	                                 ["L"],
-	                                 ["M"]]),
-	                  [["G", "H", "I", "J", "K", "L", "M"]],
+	assertEqualMatrix(getReversed([["G"],
+	                               ["H"],
+	                               ["I"],
+	                               ["J"],
+	                               ["K"],
+	                               ["L"],
+	                               ["M"]]),
+	                  [["M"],
+	                   ["L"],
+	                   ["K"],
+	                   ["J"],
+	                   ["I"],
+	                   ["H"],
+	                   ["G"]],
 	                   "Case #3");
 
-	assertEqualMatrix(getTransposed([[6.2]]), [[6.2]], "Case #4");
+	assertEqualMatrix(getReversed([[6.2]]), [[6.2]], "Case #4");
 
 	//Matrix should not be changed after transposition
 	var matrix1 = [[-4, 0, 3],
 	               [ 2, 2, 0],
 	               [ 1, 2, 3]];
-	var matrix2 = getTransposed(matrix1);
-	assertEqual(matrix1[0][1], 0, "Case 5.1")
-	assertEqual(matrix1[1][2], 0, "Case 5.2")
-	assertEqual(matrix1[2][0], 1, "Case 5.3")
+	var matrix2 = getReversed(matrix1);
+	assertEqual(matrix1[0][1], 0, "Case #5.1");
+	assertEqual(matrix1[1][2], 0, "Case #5.2");
+	assertEqual(matrix1[2][0], 1, "Case #5.3");
 
-	assertEqualMatrix(getTransposed(getTransposed(matrix1)), matrix1, "Case #6");
+	assertEqualMatrix(getReversed(getReversed(matrix1)), matrix1, "Case #6");
 
 	console.log("Done!");
 }
