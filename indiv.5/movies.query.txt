@@ -1,0 +1,14 @@
+SELECT DISTINCT ?movie ?movie_title ?year (SAMPLE(?genre_label) as ?genreFirst) (SAMPLE(?director_label) as ?directorFirst)
+WHERE
+{
+  ?movie wdt:P31 wd:Q11424.
+  ?movie rdfs:label ?movie_title filter (lang(?movie_title) = "ru").
+  ?movie wdt:P577 ?date.
+  BIND(str(YEAR(?date)) AS ?year)
+  ?movie wdt:P136 ?genre.
+  ?genre rdfs:label ?genre_label filter (lang(?genre_label) = "ru").
+  ?movie wdt:P57 ?director.
+  ?director rdfs:label ?director_label filter (lang(?director_label) = "ru").
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "ru" }
+}
+GROUP BY ?movie ?movie_title ?year

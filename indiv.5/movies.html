@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task.1 - Albums</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script language="javascript">
+    function runTest() {
+    	filterTable("movies", {year: "2000"});
+    	filterTable("movies", {year: "2000", genre: "gothic"});
+    	filterTable("movies", {album: "donnu", year: "pop", performer: "Me"});
+    }
+    </script>
+</head>
+<body>
+
+<table id="movies">
+<tr>
+	<th>movie</th>
+	<th>movie_title</th>
+	<th>year</th>
+	<th>genreFirst</th>
+	<th>directorFirst</th>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1345583</td>
+	<td data-field-name="movie_title">Злые и красивые</td>
+	<td data-field-name="year">1952</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Винсент Миннелли</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1760854</td>
+	<td data-field-name="movie_title">Джентльмены женятся на брюнетках</td>
+	<td data-field-name="year">1955</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Ричард Сейл</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q652251</td>
+	<td data-field-name="movie_title">Некромантик</td>
+	<td data-field-name="year">1987</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Йорг Буттгерайт</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1711517</td>
+	<td data-field-name="movie_title">Юха (фильм)</td>
+	<td data-field-name="year">1999</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Каурисмяки, Аки</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q865346</td>
+	<td data-field-name="movie_title">Из Парижа с любовью</td>
+	<td data-field-name="year">2010</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Морель, Пьер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4233703</td>
+	<td data-field-name="movie_title">Королева Марго (телесериал)</td>
+	<td data-field-name="year">1996</td>
+	<td data-field-name="genreFirst">драма</td>
+	<td data-field-name="directorFirst">Муратов, Александр Александрович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q916645</td>
+	<td data-field-name="movie_title">Вера Дрейк</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Ли, Майк</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q649600</td>
+	<td data-field-name="movie_title">Чувство</td>
+	<td data-field-name="year">1954</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Лукино Висконти</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3815223</td>
+	<td data-field-name="movie_title">Убийцы Барби против Дракулы</td>
+	<td data-field-name="year">2003</td>
+	<td data-field-name="genreFirst">фильм о вампирах</td>
+	<td data-field-name="directorFirst">Хесус Франко</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q919579</td>
+	<td data-field-name="movie_title">Когда-то они были воинами</td>
+	<td data-field-name="year">1994</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Тамахори, Ли</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2522756</td>
+	<td data-field-name="movie_title">За холмами</td>
+	<td data-field-name="year">2012</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Мунджиу, Кристиан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1636538</td>
+	<td data-field-name="movie_title">Состояние исступления</td>
+	<td data-field-name="year">1990</td>
+	<td data-field-name="genreFirst">криминальный фильм</td>
+	<td data-field-name="directorFirst">Джоану, Фил</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4368799</td>
+	<td data-field-name="movie_title">Поздние свидания</td>
+	<td data-field-name="year">1980</td>
+	<td data-field-name="genreFirst">мелодрама</td>
+	<td data-field-name="directorFirst">Григорьев, Владимир Николаевич</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2358852</td>
+	<td data-field-name="movie_title">Голубая нота</td>
+	<td data-field-name="year">1991</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Жулавский, Анджей</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4315165</td>
+	<td data-field-name="movie_title">Начальник Чукотки</td>
+	<td data-field-name="year">1966</td>
+	<td data-field-name="genreFirst">приключенческий фильм</td>
+	<td data-field-name="directorFirst">Мельников, Виталий Вячеславович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2414415</td>
+	<td data-field-name="movie_title">Замок в Швеции</td>
+	<td data-field-name="year">1963</td>
+	<td data-field-name="genreFirst">комедия</td>
+	<td data-field-name="directorFirst">Роже Вадим</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4068348</td>
+	<td data-field-name="movie_title">Ар-хи-ме-ды!</td>
+	<td data-field-name="year">1975</td>
+	<td data-field-name="genreFirst">мюзикл</td>
+	<td data-field-name="directorFirst">Александр Павловский</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4208805</td>
+	<td data-field-name="movie_title">Как дома, как дела?</td>
+	<td data-field-name="year">1987</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Самвел Гаспаров</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1747317</td>
+	<td data-field-name="movie_title">Звёздный десант 3: Мародёр</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Эдвард Ноймайер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4311008</td>
+	<td data-field-name="movie_title">На прицеле ваш мозг</td>
+	<td data-field-name="year">1984</td>
+	<td data-field-name="genreFirst">документальный фильм</td>
+	<td data-field-name="directorFirst">Феликс Михайлович Соболев</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1193096</td>
+	<td data-field-name="movie_title">Отверженные</td>
+	<td data-field-name="year">1998</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Билле Аугуст</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4188959</td>
+	<td data-field-name="movie_title">Захудалое королевство</td>
+	<td data-field-name="year">1967</td>
+	<td data-field-name="genreFirst">мюзикл</td>
+	<td data-field-name="directorFirst">Селянин, Глеб Иванович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q756849</td>
+	<td data-field-name="movie_title">Скандальный дневник</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Ричард Айр</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q571309</td>
+	<td data-field-name="movie_title">Подводное течение</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Грин, Дэвид Гордон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1115677</td>
+	<td data-field-name="movie_title">Супермен и люди-кроты</td>
+	<td data-field-name="year">1951</td>
+	<td data-field-name="genreFirst">научно-фантастический фильм</td>
+	<td data-field-name="directorFirst">Ли Шолем</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q228936</td>
+	<td data-field-name="movie_title">Любовь и прочие неприятности</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">романтическая комедия</td>
+	<td data-field-name="directorFirst">Том Дей</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1262927</td>
+	<td data-field-name="movie_title">Палиция</td>
+	<td data-field-name="year">2011</td>
+	<td data-field-name="genreFirst">криминальный фильм</td>
+	<td data-field-name="directorFirst">Майвенн</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q943992</td>
+	<td data-field-name="movie_title">Ночь в опере</td>
+	<td data-field-name="year">1935</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Сэм Вуд</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q622769</td>
+	<td data-field-name="movie_title">Человек из стали</td>
+	<td data-field-name="year">2013</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Зак Снайдер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3194178</td>
+	<td data-field-name="movie_title">Катька — бумажный ранет</td>
+	<td data-field-name="year">1926</td>
+	<td data-field-name="genreFirst">мелодрама</td>
+	<td data-field-name="directorFirst">Эрмлер, Фридрих Маркович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1139458</td>
+	<td data-field-name="movie_title">После жизни</td>
+	<td data-field-name="year">1998</td>
+	<td data-field-name="genreFirst">фэнтезийный фильм</td>
+	<td data-field-name="directorFirst">Хирокадзу Корээда</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q422997</td>
+	<td data-field-name="movie_title">Девушка из Рио</td>
+	<td data-field-name="year">1969</td>
+	<td data-field-name="genreFirst">научно-фантастический фильм</td>
+	<td data-field-name="directorFirst">Хесус Франко</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4101657</td>
+	<td data-field-name="movie_title">В Москве проездом…</td>
+	<td data-field-name="year">1970</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Илья Яковлевич Гурин</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1827484</td>
+	<td data-field-name="movie_title">Читай по губам</td>
+	<td data-field-name="year">2001</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Одиар, Жак</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2328936</td>
+	<td data-field-name="movie_title">Красная тень</td>
+	<td data-field-name="year">2001</td>
+	<td data-field-name="genreFirst">фильм о любви</td>
+	<td data-field-name="directorFirst">Накано, Хироюки</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4415149</td>
+	<td data-field-name="movie_title">Семейный консультант</td>
+	<td data-field-name="year">2013</td>
+	<td data-field-name="genreFirst">комедийная драма</td>
+	<td data-field-name="directorFirst">Тайлер Перри</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q6089636</td>
+	<td data-field-name="movie_title">Оно! Ужас из космоса</td>
+	<td data-field-name="year">1958</td>
+	<td data-field-name="genreFirst">научно-фантастический фильм</td>
+	<td data-field-name="directorFirst">Эдвард Л. Кан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q474098</td>
+	<td data-field-name="movie_title">Сука любовь</td>
+	<td data-field-name="year">2000</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Алехандро Гонсалес Иньярриту</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q735314</td>
+	<td data-field-name="movie_title">Моя прекрасная прачечная</td>
+	<td data-field-name="year">1985</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Стивен Фрирз</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q12120759</td>
+	<td data-field-name="movie_title">Малахов курган</td>
+	<td data-field-name="year">1944</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Зархи, Александр Григорьевич</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q471159</td>
+	<td data-field-name="movie_title">Рождённый четвёртого июля</td>
+	<td data-field-name="year">1989</td>
+	<td data-field-name="genreFirst">военный фильм</td>
+	<td data-field-name="directorFirst">Оливер Стоун</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q798239</td>
+	<td data-field-name="movie_title">Брубэйкер</td>
+	<td data-field-name="year">1980</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Розенберг, Стюарт</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1548882</td>
+	<td data-field-name="movie_title">Дети кукурузы 5: Поля страха</td>
+	<td data-field-name="year">1998</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Этан Уайли</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1889399</td>
+	<td data-field-name="movie_title">Мир без солнца</td>
+	<td data-field-name="year">1964</td>
+	<td data-field-name="genreFirst">документальный фильм о природе</td>
+	<td data-field-name="directorFirst">Кусто, Жак-Ив</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1699579</td>
+	<td data-field-name="movie_title">1990: Воины Бронкса</td>
+	<td data-field-name="year">1982</td>
+	<td data-field-name="genreFirst">постапокалиптический фильм</td>
+	<td data-field-name="directorFirst">Энцо Дж. Кастеллари</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4117146</td>
+	<td data-field-name="movie_title">Живой щит</td>
+	<td data-field-name="year">1991</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Тед Пост</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q352000</td>
+	<td data-field-name="movie_title">Адамовы яблоки</td>
+	<td data-field-name="year">2005</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Йенсен, Андерс Томас</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q568465</td>
+	<td data-field-name="movie_title">Климт</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">фильм-биография</td>
+	<td data-field-name="directorFirst">Руис, Рауль</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1756455</td>
+	<td data-field-name="movie_title">Три умницы</td>
+	<td data-field-name="year">1932</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Уильям Бодин</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1279807</td>
+	<td data-field-name="movie_title">Четвёртая война</td>
+	<td data-field-name="year">1990</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Франкенхаймер, Джон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2013798</td>
+	<td data-field-name="movie_title">Человек-осьминог</td>
+	<td data-field-name="year">1971</td>
+	<td data-field-name="genreFirst">научно-фантастический фильм</td>
+	<td data-field-name="directorFirst">Гарри Эссекс</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q17351649</td>
+	<td data-field-name="movie_title">Мотивации ноль</td>
+	<td data-field-name="year">2014</td>
+	<td data-field-name="genreFirst">комедийная драма</td>
+	<td data-field-name="directorFirst">Талья Лави</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q260509</td>
+	<td data-field-name="movie_title">Субмарина</td>
+	<td data-field-name="year">2011</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Ричард Айоади</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q878774</td>
+	<td data-field-name="movie_title">Стервозные штучки</td>
+	<td data-field-name="year">2009</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Рик Джейкобсон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q903895</td>
+	<td data-field-name="movie_title">Брейк-данс (фильм)</td>
+	<td data-field-name="year">1984</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Джоэл Силберг</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q221949</td>
+	<td data-field-name="movie_title">Красный пояс</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Дэвид Мэмет</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q249350</td>
+	<td data-field-name="movie_title">Нокаут</td>
+	<td data-field-name="year">2012</td>
+	<td data-field-name="genreFirst">криминальный фильм</td>
+	<td data-field-name="directorFirst">Стивен Содерберг</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q143513</td>
+	<td data-field-name="movie_title">Пять сантиметров в секунду</td>
+	<td data-field-name="year">2007</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Макото Синкай</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q421875</td>
+	<td data-field-name="movie_title">Секретные материалы: Хочу верить</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Картер, Крис</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1778814</td>
+	<td data-field-name="movie_title">Одержимость</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Энн Тернер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q15618007</td>
+	<td data-field-name="movie_title">Всё включено 2: Галопом по Европам</td>
+	<td data-field-name="year">2015</td>
+	<td data-field-name="genreFirst">семейный фильм</td>
+	<td data-field-name="directorFirst">Ханнес Хольм</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4102841</td>
+	<td data-field-name="movie_title">Валерий Чкалов</td>
+	<td data-field-name="year">1941</td>
+	<td data-field-name="genreFirst">фильм-биография</td>
+	<td data-field-name="directorFirst">Михаил Константинович Калатозов</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q831638</td>
+	<td data-field-name="movie_title">Рассвет</td>
+	<td data-field-name="year">1933</td>
+	<td data-field-name="genreFirst">военный фильм</td>
+	<td data-field-name="directorFirst">Учицки, Густав</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4308467</td>
+	<td data-field-name="movie_title">Мусоргский</td>
+	<td data-field-name="year">1950</td>
+	<td data-field-name="genreFirst">фильм-биография</td>
+	<td data-field-name="directorFirst">Рошаль, Григорий Львович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q8907251</td>
+	<td data-field-name="movie_title">Помощник мясника</td>
+	<td data-field-name="year">1917</td>
+	<td data-field-name="genreFirst">экранизация</td>
+	<td data-field-name="directorFirst">Нил Джордан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q594226</td>
+	<td data-field-name="movie_title">Дурное влияние</td>
+	<td data-field-name="year">1990</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Кёртис Хэнсон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q462409</td>
+	<td data-field-name="movie_title">Возвращение дракона</td>
+	<td data-field-name="year">1972</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Брюс Ли</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q369346</td>
+	<td data-field-name="movie_title">Экстаз</td>
+	<td data-field-name="year">1933</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Махаты, Густав</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q808101</td>
+	<td data-field-name="movie_title">Дерево Джошуа</td>
+	<td data-field-name="year">1993</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Вик Армстронг</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q221305</td>
+	<td data-field-name="movie_title">Звёздный путь 3: В поисках Спока</td>
+	<td data-field-name="year">1984</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Леонард Нимой</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q496255</td>
+	<td data-field-name="movie_title">В случае убийства набирайте «М»</td>
+	<td data-field-name="year">1954</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Альфред Хичкок</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q15720523</td>
+	<td data-field-name="movie_title">Москаль-чародей</td>
+	<td data-field-name="year">1995</td>
+	<td data-field-name="genreFirst">комедия</td>
+	<td data-field-name="directorFirst">Засеев-Руденко, Николай Викторович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q16930515</td>
+	<td data-field-name="movie_title">Белый Бог</td>
+	<td data-field-name="year">2015</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Мундруцо, Корнель</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2533337</td>
+	<td data-field-name="movie_title">Жара</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">романтическая комедия</td>
+	<td data-field-name="directorFirst">Гигинеишвили, Реваз Давидович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q25057</td>
+	<td data-field-name="movie_title">Бразилия</td>
+	<td data-field-name="year">1985</td>
+	<td data-field-name="genreFirst">юмористическая фантастика</td>
+	<td data-field-name="directorFirst">Терри Гиллиам</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1697426</td>
+	<td data-field-name="movie_title">Туман</td>
+	<td data-field-name="year">2005</td>
+	<td data-field-name="genreFirst">детективный фильм</td>
+	<td data-field-name="directorFirst">Руперт Уэйнрайт</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3952118</td>
+	<td data-field-name="movie_title">Шизоид (фильм)</td>
+	<td data-field-name="year">1980</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Дэвид Полсен</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q6662151</td>
+	<td data-field-name="movie_title">Чудная долина</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">комедия</td>
+	<td data-field-name="directorFirst">Кубаева, Рано Джалиловна</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q830208</td>
+	<td data-field-name="movie_title">Час пик 2</td>
+	<td data-field-name="year">2001</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Бретт Рэтнер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q550558</td>
+	<td data-field-name="movie_title">Маппеты</td>
+	<td data-field-name="year">2011</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Джеймс Бобин</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q741257</td>
+	<td data-field-name="movie_title">Знакомство со спартанцами</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Аарон Зельцер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1197547</td>
+	<td data-field-name="movie_title">Поцелуй смерти (фильм, 1947)</td>
+	<td data-field-name="year">1947</td>
+	<td data-field-name="genreFirst">фильм о заключённых</td>
+	<td data-field-name="directorFirst">Хэтэуэй, Генри</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q187561</td>
+	<td data-field-name="movie_title">В постели с Мадонной</td>
+	<td data-field-name="year">1991</td>
+	<td data-field-name="genreFirst">документальный фильм</td>
+	<td data-field-name="directorFirst">Алек Кешишян</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q7740598</td>
+	<td data-field-name="movie_title">Развод по-фински или Дом, где растёт любовь</td>
+	<td data-field-name="year">2009</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Каурисмяки, Мика</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1732325</td>
+	<td data-field-name="movie_title">Карл Май</td>
+	<td data-field-name="year">1974</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Зиберберг, Ханс-Юрген</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1570221</td>
+	<td data-field-name="movie_title">Подстава</td>
+	<td data-field-name="year">1950</td>
+	<td data-field-name="genreFirst">нуар</td>
+	<td data-field-name="directorFirst">Уайз, Роберт</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q589729</td>
+	<td data-field-name="movie_title">Моя любимая супруга</td>
+	<td data-field-name="year">1940</td>
+	<td data-field-name="genreFirst">комедия повторного брака</td>
+	<td data-field-name="directorFirst">Гарсон Канин</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q258712</td>
+	<td data-field-name="movie_title">Ножницы</td>
+	<td data-field-name="year">1991</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Фрэнк Де Фелитта</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1769998</td>
+	<td data-field-name="movie_title">Итальянские любовники</td>
+	<td data-field-name="year">1996</td>
+	<td data-field-name="genreFirst">романтическая комедия</td>
+	<td data-field-name="directorFirst">Джозеф Болонья</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q327312</td>
+	<td data-field-name="movie_title">Сотовый</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">криминальный фильм</td>
+	<td data-field-name="directorFirst">Дэвид Р. Эллис</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1161624</td>
+	<td data-field-name="movie_title">Человек в одном красном ботинке</td>
+	<td data-field-name="year">1985</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Стэн Дрэготи</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1786310</td>
+	<td data-field-name="movie_title">Мадам Сузацка</td>
+	<td data-field-name="year">1988</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Шлезингер, Джон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4160486</td>
+	<td data-field-name="movie_title">Джори</td>
+	<td data-field-name="year">1973</td>
+	<td data-field-name="genreFirst">вестерн</td>
+	<td data-field-name="directorFirst">Хорхе Фонс</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q644634</td>
+	<td data-field-name="movie_title">Шалопаи</td>
+	<td data-field-name="year">1994</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Сфирис, Пенелопа</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4382759</td>
+	<td data-field-name="movie_title">Прямое попадание (фильм, 1994)</td>
+	<td data-field-name="year">1994</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Джозеф Мехри</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3425459</td>
+	<td data-field-name="movie_title">Кровь на когтях сатаны</td>
+	<td data-field-name="year">1971</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Пьерс Хаггард</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q689300</td>
+	<td data-field-name="movie_title">Горькие слёзы Петры фон Кант</td>
+	<td data-field-name="year">1972</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Райнер Вернер Фасбиндер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q662679</td>
+	<td data-field-name="movie_title">Семь невест для семерых братьев</td>
+	<td data-field-name="year">1954</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Стэнли Донен</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1755247</td>
+	<td data-field-name="movie_title">Госпиталь «Британия»</td>
+	<td data-field-name="year">1982</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Линдсей Андерсон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q820753</td>
+	<td data-field-name="movie_title">Школа рока</td>
+	<td data-field-name="year">2003</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Линклейтер, Ричард</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q937351</td>
+	<td data-field-name="movie_title">Фабрика футбола</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Ник Лав</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4171248</td>
+	<td data-field-name="movie_title">Духless (фильм)</td>
+	<td data-field-name="year">2012</td>
+	<td data-field-name="genreFirst">драма</td>
+	<td data-field-name="directorFirst">Прыгунов, Роман Львович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q385951</td>
+	<td data-field-name="movie_title">Няня</td>
+	<td data-field-name="year">1995</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Гай Ферленд</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1088058</td>
+	<td data-field-name="movie_title">Враг мой</td>
+	<td data-field-name="year">1985</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Петерсен, Вольфганг</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q818849</td>
+	<td data-field-name="movie_title">Еврей Зюсс</td>
+	<td data-field-name="year">1940</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Файт Харлан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1393064</td>
+	<td data-field-name="movie_title">Жёлтое море</td>
+	<td data-field-name="year">2010</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Хонгчжин, На</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q15613279</td>
+	<td data-field-name="movie_title">Особо опасна</td>
+	<td data-field-name="year">2015</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Ньюман, Кайл</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1209390</td>
+	<td data-field-name="movie_title">Непристойное поведение</td>
+	<td data-field-name="year">1998</td>
+	<td data-field-name="genreFirst">научно-фантастический фильм</td>
+	<td data-field-name="directorFirst">Дэвид Наттер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q13674499</td>
+	<td data-field-name="movie_title">Долина прощаний</td>
+	<td data-field-name="year">2013</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Оомори, Тацуси</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q154077</td>
+	<td data-field-name="movie_title">Переступить черту</td>
+	<td data-field-name="year">2005</td>
+	<td data-field-name="genreFirst">фильм-биография</td>
+	<td data-field-name="directorFirst">Джеймс Мэнголд</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1592308</td>
+	<td data-field-name="movie_title">Охотники за головами</td>
+	<td data-field-name="year">2011</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Тильдум, Мортен</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1620244</td>
+	<td data-field-name="movie_title">Наш городок</td>
+	<td data-field-name="year">1940</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Сэм Вуд</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1066749</td>
+	<td data-field-name="movie_title">Норвежский лес</td>
+	<td data-field-name="year">2010</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Чан, Ань Хунг</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3321478</td>
+	<td data-field-name="movie_title">Господин Такси</td>
+	<td data-field-name="year">1952</td>
+	<td data-field-name="genreFirst">комедийная драма</td>
+	<td data-field-name="directorFirst">Юнебель, Андре</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q700206</td>
+	<td data-field-name="movie_title">Победа веры</td>
+	<td data-field-name="year">1933</td>
+	<td data-field-name="genreFirst">документальный фильм</td>
+	<td data-field-name="directorFirst">Лени Рифеншталь</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2116212</td>
+	<td data-field-name="movie_title">Танго</td>
+	<td data-field-name="year">1998</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Саура, Карлос</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q475716</td>
+	<td data-field-name="movie_title">В глубине</td>
+	<td data-field-name="year">2000</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Шери Элвуд</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1194785</td>
+	<td data-field-name="movie_title">Отчаянный папа</td>
+	<td data-field-name="year">1993</td>
+	<td data-field-name="genreFirst">комедийная драма</td>
+	<td data-field-name="directorFirst">Даррелл Рудт</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3410141</td>
+	<td data-field-name="movie_title">Бродяга (фильм, 1992)</td>
+	<td data-field-name="year">1992</td>
+	<td data-field-name="genreFirst">комедийный фильм ужасов</td>
+	<td data-field-name="directorFirst">Уолас, Крис</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3221800</td>
+	<td data-field-name="movie_title">Труп моего врага</td>
+	<td data-field-name="year">1976</td>
+	<td data-field-name="genreFirst">криминальный фильм</td>
+	<td data-field-name="directorFirst">Анри Вернёй</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4515030</td>
+	<td data-field-name="movie_title">Четвёртая планета</td>
+	<td data-field-name="year">1995</td>
+	<td data-field-name="genreFirst">научная фантастика</td>
+	<td data-field-name="directorFirst">Астрахан, Дмитрий Хананович</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1781187</td>
+	<td data-field-name="movie_title">Жена против секретарши</td>
+	<td data-field-name="year">1936</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Кларенс Браун</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q70069</td>
+	<td data-field-name="movie_title">Тринадцатый район</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">научно-фантастический фильм</td>
+	<td data-field-name="directorFirst">Морель, Пьер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q9375310</td>
+	<td data-field-name="movie_title">Весна, пан сержант!</td>
+	<td data-field-name="year">1974</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Хмелевский, Тадеуш</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q181795</td>
+	<td data-field-name="movie_title">Звёздные войны. Эпизод V: Империя наносит ответный удар</td>
+	<td data-field-name="year">1980</td>
+	<td data-field-name="genreFirst">фэнтезийный фильм</td>
+	<td data-field-name="directorFirst">Кершнер, Ирвин</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2276203</td>
+	<td data-field-name="movie_title">Вики</td>
+	<td data-field-name="year">1953</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Гарри Хорнер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q18669765</td>
+	<td data-field-name="movie_title">Эффект Лазаря</td>
+	<td data-field-name="year">2015</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Дэвид Гелб</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1753829</td>
+	<td data-field-name="movie_title">Корабли викингов</td>
+	<td data-field-name="year">1964</td>
+	<td data-field-name="genreFirst">приключенческий фильм</td>
+	<td data-field-name="directorFirst">Кардифф, Джек</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q16249038</td>
+	<td data-field-name="movie_title">Берроуз</td>
+	<td data-field-name="year">1983</td>
+	<td data-field-name="genreFirst">документальный фильм</td>
+	<td data-field-name="directorFirst">Говард Брукнер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1340626</td>
+	<td data-field-name="movie_title">Море травы (фильм)</td>
+	<td data-field-name="year">1947</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Элиа Казан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q499697</td>
+	<td data-field-name="movie_title">Всё, что вы всегда хотели знать о сексе, но боялись спросить</td>
+	<td data-field-name="year">1972</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Вуди Аллен</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1469426</td>
+	<td data-field-name="movie_title">Санта-Клаус 2</td>
+	<td data-field-name="year">2002</td>
+	<td data-field-name="genreFirst">фэнтезийный фильм</td>
+	<td data-field-name="directorFirst">Лембек, Майкл</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1471500</td>
+	<td data-field-name="movie_title">Дик</td>
+	<td data-field-name="year">1999</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Эндрю Флеминг</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q458033</td>
+	<td data-field-name="movie_title">Три дня Кондора</td>
+	<td data-field-name="year">1975</td>
+	<td data-field-name="genreFirst">политический триллер</td>
+	<td data-field-name="directorFirst">Поллак, Сидни</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1754270</td>
+	<td data-field-name="movie_title">Молодой Уинстон</td>
+	<td data-field-name="year">1972</td>
+	<td data-field-name="genreFirst">флешбэк-фильм</td>
+	<td data-field-name="directorFirst">Ричард Аттенборо</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q737109</td>
+	<td data-field-name="movie_title">Двухполосное шоссе</td>
+	<td data-field-name="year">1971</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Хеллман, Монте</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2340655</td>
+	<td data-field-name="movie_title">Внутри Ллевин Дэвис</td>
+	<td data-field-name="year">2014</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">братья Коэн</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q77013</td>
+	<td data-field-name="movie_title">Ночь пресмыкающихся</td>
+	<td data-field-name="year">1986</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Фред Деккер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q928019</td>
+	<td data-field-name="movie_title">Убить Билла. Фильм 2</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">girls with guns</td>
+	<td data-field-name="directorFirst">Квентин Тарантино</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q209667</td>
+	<td data-field-name="movie_title">Возвращение</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Педро Альмодовар</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1195497</td>
+	<td data-field-name="movie_title">Человек из Ларами</td>
+	<td data-field-name="year">1956</td>
+	<td data-field-name="genreFirst">вестерн</td>
+	<td data-field-name="directorFirst">Энтони Манн</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1131669</td>
+	<td data-field-name="movie_title">Всё или ничего</td>
+	<td data-field-name="year">2005</td>
+	<td data-field-name="genreFirst">фильм о заключённых</td>
+	<td data-field-name="directorFirst">Сигал, Питер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q686059</td>
+	<td data-field-name="movie_title">Шум в сердце</td>
+	<td data-field-name="year">1971</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Луи Маль</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2723328</td>
+	<td data-field-name="movie_title">Вышибала</td>
+	<td data-field-name="year">2000</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Ромеро, Джордж</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1220035</td>
+	<td data-field-name="movie_title">Публичная женщина</td>
+	<td data-field-name="year">1984</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Жулавский, Анджей</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1731265</td>
+	<td data-field-name="movie_title">Любители музыки</td>
+	<td data-field-name="year">1970</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Кен Расселл</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q44396</td>
+	<td data-field-name="movie_title">Лунная походка</td>
+	<td data-field-name="year">1988</td>
+	<td data-field-name="genreFirst">фэнтезийный фильм</td>
+	<td data-field-name="directorFirst">Джерри Крамер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1342653</td>
+	<td data-field-name="movie_title">Обход</td>
+	<td data-field-name="year">1971</td>
+	<td data-field-name="genreFirst">приключенческий фильм</td>
+	<td data-field-name="directorFirst">Николас Роуг</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4085822</td>
+	<td data-field-name="movie_title">Бессмертные (фильм, 1974)</td>
+	<td data-field-name="year">1974</td>
+	<td data-field-name="genreFirst">исторический фильм</td>
+	<td data-field-name="directorFirst">Николаеску, Серджиу</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2306760</td>
+	<td data-field-name="movie_title">Ужас в опере</td>
+	<td data-field-name="year">1987</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Дарио Ардженто</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q837070</td>
+	<td data-field-name="movie_title">Улыбки летней ночи</td>
+	<td data-field-name="year">1955</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Ингмар Бергман</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q952286</td>
+	<td data-field-name="movie_title">Девушка с чемоданом</td>
+	<td data-field-name="year">1961</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Дзурлини, Валерио</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3220854</td>
+	<td data-field-name="movie_title">Заблудшие ангелы</td>
+	<td data-field-name="year">1989</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Хадсон, Хью</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q15270520</td>
+	<td data-field-name="movie_title">Вечное возвращение (фильм, 2012)</td>
+	<td data-field-name="year">2012</td>
+	<td data-field-name="genreFirst">артхаус</td>
+	<td data-field-name="directorFirst">Муратова, Кира Георгиевна</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q20444585</td>
+	<td data-field-name="movie_title">Служанка</td>
+	<td data-field-name="year">2016</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Пак Чхан Ук</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q494364</td>
+	<td data-field-name="movie_title">Натянутая тетива</td>
+	<td data-field-name="year">2005</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Ким Ки Дук</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1452232</td>
+	<td data-field-name="movie_title">Чудо</td>
+	<td data-field-name="year">1991</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Нил Джордан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2963768</td>
+	<td data-field-name="movie_title">Китайская одиссея 2002</td>
+	<td data-field-name="year">2002</td>
+	<td data-field-name="genreFirst">романтическая комедия</td>
+	<td data-field-name="directorFirst">Джеффри Лау</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q326114</td>
+	<td data-field-name="movie_title">Железная хватка</td>
+	<td data-field-name="year">2010</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">братья Коэн</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1271819</td>
+	<td data-field-name="movie_title">Уикенд на берегу океана (фильм)</td>
+	<td data-field-name="year">1964</td>
+	<td data-field-name="genreFirst">экранизация</td>
+	<td data-field-name="directorFirst">Анри Вернёй</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q945185</td>
+	<td data-field-name="movie_title">Особняк живых мертвецов</td>
+	<td data-field-name="year">1982</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Хесус Франко</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2633215</td>
+	<td data-field-name="movie_title">Цепная реакция</td>
+	<td data-field-name="year">1963</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Марсель Блюваль</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q16736285</td>
+	<td data-field-name="movie_title">Соль Земли</td>
+	<td data-field-name="year">2015</td>
+	<td data-field-name="genreFirst">документальный фильм</td>
+	<td data-field-name="directorFirst">Вим Вендерс</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q577221</td>
+	<td data-field-name="movie_title">Девятая сессия</td>
+	<td data-field-name="year">2001</td>
+	<td data-field-name="genreFirst">психологические ужасы</td>
+	<td data-field-name="directorFirst">Брэд Андерсон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q10501864</td>
+	<td data-field-name="movie_title">Гэбриэлль</td>
+	<td data-field-name="year">1954</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Хассе Экман</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q28065409</td>
+	<td data-field-name="movie_title">Собачий остров</td>
+	<td data-field-name="year">2018</td>
+	<td data-field-name="genreFirst">комедия</td>
+	<td data-field-name="directorFirst">Уэс Андерсон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2647033</td>
+	<td data-field-name="movie_title">Обливион</td>
+	<td data-field-name="year">1994</td>
+	<td data-field-name="genreFirst">юмористическая фантастика</td>
+	<td data-field-name="directorFirst">Сэм Ирвин</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q477593</td>
+	<td data-field-name="movie_title">Специальное задание</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Флорентайн, Айзек</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q754745</td>
+	<td data-field-name="movie_title">Необратимость</td>
+	<td data-field-name="year">2002</td>
+	<td data-field-name="genreFirst">криминальный фильм</td>
+	<td data-field-name="directorFirst">Ноэ, Гаспар</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q586310</td>
+	<td data-field-name="movie_title">Шуша</td>
+	<td data-field-name="year">1946</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Витторио Де Сика</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q506644</td>
+	<td data-field-name="movie_title">Предчувствие</td>
+	<td data-field-name="year">2007</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Меннан Япо</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1421476</td>
+	<td data-field-name="movie_title">Рождественские каникулы</td>
+	<td data-field-name="year">1989</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Джеримайя С. Чечик</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1215455</td>
+	<td data-field-name="movie_title">Комедианты</td>
+	<td data-field-name="year">1992</td>
+	<td data-field-name="genreFirst">фильм о любви</td>
+	<td data-field-name="directorFirst">Гиллис МакКиннон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q732436</td>
+	<td data-field-name="movie_title">Марадона</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">документальный фильм</td>
+	<td data-field-name="directorFirst">Эмир Кустурица</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1185312</td>
+	<td data-field-name="movie_title">Безумие-13</td>
+	<td data-field-name="year">1963</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Фрэнсис Форд Коппола</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q662436</td>
+	<td data-field-name="movie_title">Дон. Главарь мафии</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Фархан Ахтар</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q950700</td>
+	<td data-field-name="movie_title">От заката до рассвета 2: Кровавые деньги Техаса</td>
+	<td data-field-name="year">1999</td>
+	<td data-field-name="genreFirst">фильм о вампирах</td>
+	<td data-field-name="directorFirst">Шпигель, Скотт</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4053737</td>
+	<td data-field-name="movie_title">Ёлки 3</td>
+	<td data-field-name="year">2013</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Александр Константинович Котт</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1503700</td>
+	<td data-field-name="movie_title">Я рядом с тобой!</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Хан, Фара</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q10862358</td>
+	<td data-field-name="movie_title">Ип Ман: Последняя схватка</td>
+	<td data-field-name="year">2013</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Херман Яу</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4517285</td>
+	<td data-field-name="movie_title">Чрезмерное насилие</td>
+	<td data-field-name="year">1993</td>
+	<td data-field-name="genreFirst">боевые искусства</td>
+	<td data-field-name="directorFirst">Джон Хесс</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q135315</td>
+	<td data-field-name="movie_title">Славное будущее</td>
+	<td data-field-name="year">1997</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Эгоян, Атом</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q679429</td>
+	<td data-field-name="movie_title">Старое ружьё</td>
+	<td data-field-name="year">1975</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Энрико, Робер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q644065</td>
+	<td data-field-name="movie_title">Группа «Коммитментс»</td>
+	<td data-field-name="year">1991</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Паркер, Алан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q573999</td>
+	<td data-field-name="movie_title">Лурд</td>
+	<td data-field-name="year">2009</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Джессика Хаузнер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q5623600</td>
+	<td data-field-name="movie_title">Звёздная эскадра</td>
+	<td data-field-name="year">1930</td>
+	<td data-field-name="genreFirst">военный фильм</td>
+	<td data-field-name="directorFirst">Бучковский, Леонард</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1962105</td>
+	<td data-field-name="movie_title">Краткая история времени</td>
+	<td data-field-name="year">1991</td>
+	<td data-field-name="genreFirst">документальный фильм</td>
+	<td data-field-name="directorFirst">Моррис, Эррол</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1310893</td>
+	<td data-field-name="movie_title">Я обслуживал английского короля</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">экранизация</td>
+	<td data-field-name="directorFirst">Менцель, Иржи</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q11390744</td>
+	<td data-field-name="movie_title">Венера в мехах</td>
+	<td data-field-name="year">2013</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Роман Полански</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1313530</td>
+	<td data-field-name="movie_title">Сильная женщина</td>
+	<td data-field-name="year">2001</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Маршалл, Пенни</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q16782</td>
+	<td data-field-name="movie_title">Погребённый заживо</td>
+	<td data-field-name="year">2010</td>
+	<td data-field-name="genreFirst">психологический триллер</td>
+	<td data-field-name="directorFirst">Родриго Кортес</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q17082319</td>
+	<td data-field-name="movie_title">Сомния</td>
+	<td data-field-name="year">2016</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Майк Флэнаган</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q630132</td>
+	<td data-field-name="movie_title">Влюблённые женщины</td>
+	<td data-field-name="year">1969</td>
+	<td data-field-name="genreFirst">Гомоэротизм в кинo</td>
+	<td data-field-name="directorFirst">Кен Расселл</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1755502</td>
+	<td data-field-name="movie_title">Оставайся собой</td>
+	<td data-field-name="year">1978</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Латтуада, Альберто</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q221462</td>
+	<td data-field-name="movie_title">Мальтийский сокол</td>
+	<td data-field-name="year">1941</td>
+	<td data-field-name="genreFirst">экранизация</td>
+	<td data-field-name="directorFirst">Хьюстон, Джон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q920908</td>
+	<td data-field-name="movie_title">Обвиняемая</td>
+	<td data-field-name="year">1949</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Уильям Дитерле</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2307542</td>
+	<td data-field-name="movie_title">Всё ради любви</td>
+	<td data-field-name="year">1993</td>
+	<td data-field-name="genreFirst">кино для подростков</td>
+	<td data-field-name="directorFirst">Майкл Койш</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1781998</td>
+	<td data-field-name="movie_title">Любимец учителя</td>
+	<td data-field-name="year">1958</td>
+	<td data-field-name="genreFirst">романтическая комедия</td>
+	<td data-field-name="directorFirst">Джордж Ситон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4286107</td>
+	<td data-field-name="movie_title">Машенька</td>
+	<td data-field-name="year">1942</td>
+	<td data-field-name="genreFirst">мелодрама</td>
+	<td data-field-name="directorFirst">Юлий Яковлевич Райзман</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3520457</td>
+	<td data-field-name="movie_title">Кровавое кимоно</td>
+	<td data-field-name="year">1959</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Фуллер, Сэмюэл</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1768473</td>
+	<td data-field-name="movie_title">Джузеппе Верди</td>
+	<td data-field-name="year">1938</td>
+	<td data-field-name="genreFirst">фильм-биография</td>
+	<td data-field-name="directorFirst">Галлоне, Кармине</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q323472</td>
+	<td data-field-name="movie_title">Боец</td>
+	<td data-field-name="year">2010</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Дэвид Оуэн Расселл</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1630422</td>
+	<td data-field-name="movie_title">Больница (фильм)</td>
+	<td data-field-name="year">1971</td>
+	<td data-field-name="genreFirst">комедийная драма</td>
+	<td data-field-name="directorFirst">Хиллер, Артур</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q18407</td>
+	<td data-field-name="movie_title">Сладкая жизнь</td>
+	<td data-field-name="year">1960</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Федерико Феллини</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2622347</td>
+	<td data-field-name="movie_title">Особо опасен</td>
+	<td data-field-name="year">2009</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Прабху Дева</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1301240</td>
+	<td data-field-name="movie_title">Дом страха</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Вильям Батлер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q220515</td>
+	<td data-field-name="movie_title">В погоне за счастьем</td>
+	<td data-field-name="year">2006</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Габриэле Муччино</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q378754</td>
+	<td data-field-name="movie_title">Собор</td>
+	<td data-field-name="year">1989</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Соави, Микеле</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4139699</td>
+	<td data-field-name="movie_title">Глен и Рэнда (фильм)</td>
+	<td data-field-name="year">1971</td>
+	<td data-field-name="genreFirst">научно-фантастический фильм</td>
+	<td data-field-name="directorFirst">Джим МакБрайд</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2226293</td>
+	<td data-field-name="movie_title">Двойник дьявола</td>
+	<td data-field-name="year">2011</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Тамахори, Ли</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1519075</td>
+	<td data-field-name="movie_title">Возлюбленная</td>
+	<td data-field-name="year">2007</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Санджай Лила Бхансали</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2300940</td>
+	<td data-field-name="movie_title">Тормоз</td>
+	<td data-field-name="year">2003</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Уэйн Крамер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q7929545</td>
+	<td data-field-name="movie_title">Викрам</td>
+	<td data-field-name="year">1986</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Раджасекхар</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1392442</td>
+	<td data-field-name="movie_title">Прямая и явная угроза</td>
+	<td data-field-name="year">1994</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Филлип Нойс</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1211343</td>
+	<td data-field-name="movie_title">Деревенщина в Беверли-Хиллз (фильм)</td>
+	<td data-field-name="year">1993</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Сфирис, Пенелопа</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1168586</td>
+	<td data-field-name="movie_title">Гробница Лигейи (фильм)</td>
+	<td data-field-name="year">1964</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Роджер Корман</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1136339</td>
+	<td data-field-name="movie_title">Леди-ястреб</td>
+	<td data-field-name="year">1985</td>
+	<td data-field-name="genreFirst">приключенческий фильм</td>
+	<td data-field-name="directorFirst">Ричард Доннер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3120992</td>
+	<td data-field-name="movie_title">Гас</td>
+	<td data-field-name="year">1976</td>
+	<td data-field-name="genreFirst">комедийная драма</td>
+	<td data-field-name="directorFirst">Винсент МакЭвити</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1498124</td>
+	<td data-field-name="movie_title">Бегство в Алжир</td>
+	<td data-field-name="year">1945</td>
+	<td data-field-name="genreFirst">детективный фильм</td>
+	<td data-field-name="directorFirst">Нил, Рой Уильям</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2550198</td>
+	<td data-field-name="movie_title">Об этом не знает никто</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">триллер</td>
+	<td data-field-name="directorFirst">Краг-Якобсен, Сёрен</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q217627</td>
+	<td data-field-name="movie_title">Выпускник</td>
+	<td data-field-name="year">1967</td>
+	<td data-field-name="genreFirst">экранизация</td>
+	<td data-field-name="directorFirst">Николс, Майк</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q3520779</td>
+	<td data-field-name="movie_title">Поцелуй мумии</td>
+	<td data-field-name="year">1998</td>
+	<td data-field-name="genreFirst">фильм ужасов</td>
+	<td data-field-name="directorFirst">Майкл Алмерейда</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1699556</td>
+	<td data-field-name="movie_title">Вампиры 2: День мёртвых</td>
+	<td data-field-name="year">2002</td>
+	<td data-field-name="genreFirst">боевик</td>
+	<td data-field-name="directorFirst">Томми Ли Уоллес</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2437884</td>
+	<td data-field-name="movie_title">Возвращение в Лагерь вечных снов</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">слэшер</td>
+	<td data-field-name="directorFirst">Роберт Хилцик</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q64144</td>
+	<td data-field-name="movie_title">Жестокие игры 3</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Скотт Зил</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1962098</td>
+	<td data-field-name="movie_title">Мурлыка</td>
+	<td data-field-name="year">1962</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Левитов, Эйб</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q16326600</td>
+	<td data-field-name="movie_title">Домашнее видео: Только для взрослых</td>
+	<td data-field-name="year">2014</td>
+	<td data-field-name="genreFirst">кинокомедия</td>
+	<td data-field-name="directorFirst">Джейк Кэздан</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q6378736</td>
+	<td data-field-name="movie_title">Индюки: Назад в будущее</td>
+	<td data-field-name="year">2014</td>
+	<td data-field-name="genreFirst">бадди-муви</td>
+	<td data-field-name="directorFirst">Хейворд, Джимми</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q691672</td>
+	<td data-field-name="movie_title">Фрост против Никсона</td>
+	<td data-field-name="year">2008</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Рон Ховард</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q2529538</td>
+	<td data-field-name="movie_title">Разомкнутый круг</td>
+	<td data-field-name="year">2012</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Феликс Ван Грунинген</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q555814</td>
+	<td data-field-name="movie_title">Внутри моей памяти</td>
+	<td data-field-name="year">2004</td>
+	<td data-field-name="genreFirst">фантастика</td>
+	<td data-field-name="directorFirst">Роланд Зузо Рихтер</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1057603</td>
+	<td data-field-name="movie_title">Сатирикон</td>
+	<td data-field-name="year">1969</td>
+	<td data-field-name="genreFirst">фэнтезийный фильм</td>
+	<td data-field-name="directorFirst">Джан Луиджи Полидоро</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q4208515</td>
+	<td data-field-name="movie_title">Казённый дом (фильм)</td>
+	<td data-field-name="year">1989</td>
+	<td data-field-name="genreFirst">драма</td>
+	<td data-field-name="directorFirst">Альберт Саркисович Мкртчян</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q12140002</td>
+	<td data-field-name="movie_title">Первый корнет Стрешнев</td>
+	<td data-field-name="year">1928</td>
+	<td data-field-name="genreFirst">драма</td>
+	<td data-field-name="directorFirst">Михаил Чиаурели</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q498797</td>
+	<td data-field-name="movie_title">Версия</td>
+	<td data-field-name="year">2007</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Худ, Гэвин</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q137584</td>
+	<td data-field-name="movie_title">Идеальный голос</td>
+	<td data-field-name="year">2012</td>
+	<td data-field-name="genreFirst">музыкальный фильм</td>
+	<td data-field-name="directorFirst">Джейсон Мур</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1423331</td>
+	<td data-field-name="movie_title">Брошенный умирать</td>
+	<td data-field-name="year">2007</td>
+	<td data-field-name="genreFirst">слэшер</td>
+	<td data-field-name="directorFirst">Кристофер Харрисон</td>
+</tr>
+<tr>
+	<td data-field-name="movie">http://www.wikidata.org/entity/Q1365</td>
+	<td data-field-name="movie_title">Отнесённые необыкновенной судьбой в лазурное море в августе</td>
+	<td data-field-name="year">1974</td>
+	<td data-field-name="genreFirst">фильм-драма</td>
+	<td data-field-name="directorFirst">Лина Вертмюллер</td>
+</tr>
+</table>
+</body>
+</html>
