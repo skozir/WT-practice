@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task.1 - Albums</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script language="javascript">
+    function runTest() {
+    	filterTable("albums_table", {year: "2000"});
+    	filterTable("albums_table", {year: "2000", genre: "gothic"});
+    	filterTable("albums_table", {album: "donnu", year: "pop", performer: "Me"});
+    }
+    </script>
+</head>
+<body>
+
+<table id="albums_table">
+<tr>
+	<th>album_url</th>
+	<th>album</th>
+	<th>performer</th>
+	<th>genre</th>
+	<th>year</th>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q59449</td>
+	<td data-field-name="album">Paradise</td>
+	<td data-field-name="performer">Lana Del Rey</td>
+	<td data-field-name="genre">baroque pop</td>
+	<td data-field-name="year">2012</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q23388</td>
+	<td data-field-name="album">For Lack of a Better Name</td>
+	<td data-field-name="performer">deadmau5</td>
+	<td data-field-name="genre">electro house</td>
+	<td data-field-name="year">2009</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q558969</td>
+	<td data-field-name="album">Aladdin Sane</td>
+	<td data-field-name="performer">David Bowie</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1973</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q641620</td>
+	<td data-field-name="album">Seventh Son of a Seventh Son</td>
+	<td data-field-name="performer">Iron Maiden</td>
+	<td data-field-name="genre">heavy metal music</td>
+	<td data-field-name="year">1988</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q526386</td>
+	<td data-field-name="album">Crime of the Century</td>
+	<td data-field-name="performer">Supertramp</td>
+	<td data-field-name="genre">progressive rock</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q515749</td>
+	<td data-field-name="album">Age Ain't Nothing but a Number</td>
+	<td data-field-name="performer">Aaliyah</td>
+	<td data-field-name="genre">rhythm and blues</td>
+	<td data-field-name="year">1994</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q609073</td>
+	<td data-field-name="album">Nothing but the Beat</td>
+	<td data-field-name="performer">David Guetta</td>
+	<td data-field-name="genre">house music</td>
+	<td data-field-name="year">2011</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q591875</td>
+	<td data-field-name="album">Ballbreaker</td>
+	<td data-field-name="performer">AC/DC</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1995</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q659128</td>
+	<td data-field-name="album">Along Came a Spider</td>
+	<td data-field-name="performer">Alice Cooper</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">2008</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q599833</td>
+	<td data-field-name="album">Double Fantasy</td>
+	<td data-field-name="performer">John Lennon</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">0017</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q598888</td>
+	<td data-field-name="album">The Poison</td>
+	<td data-field-name="performer">Bullet for My Valentine</td>
+	<td data-field-name="genre">metalcore</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q535579</td>
+	<td data-field-name="album">Something Else by The Kinks</td>
+	<td data-field-name="performer">The Kinks</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1967</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q266115</td>
+	<td data-field-name="album">Roorback</td>
+	<td data-field-name="performer">Sepultura</td>
+	<td data-field-name="genre">alternative metal</td>
+	<td data-field-name="year">2003</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q654976</td>
+	<td data-field-name="album">Jailbreak</td>
+	<td data-field-name="performer">Thin Lizzy</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1976</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q584600</td>
+	<td data-field-name="album">Seasons in the Abyss</td>
+	<td data-field-name="performer">Slayer</td>
+	<td data-field-name="genre">thrash metal</td>
+	<td data-field-name="year">1990</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q190911</td>
+	<td data-field-name="album">...Baby One More Time</td>
+	<td data-field-name="performer">Britney Spears</td>
+	<td data-field-name="genre">pop music</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q212915</td>
+	<td data-field-name="album">Rated R</td>
+	<td data-field-name="performer">Rihanna</td>
+	<td data-field-name="genre">rhythm and blues</td>
+	<td data-field-name="year">2009</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q698498</td>
+	<td data-field-name="album">Around the World in a Day</td>
+	<td data-field-name="performer">Prince</td>
+	<td data-field-name="genre">neo-psychedelia</td>
+	<td data-field-name="year">1985</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q755988</td>
+	<td data-field-name="album">Hunky Dory</td>
+	<td data-field-name="performer">David Bowie</td>
+	<td data-field-name="genre">folk rock</td>
+	<td data-field-name="year">1971</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q285905</td>
+	<td data-field-name="album">Flick of the Switch</td>
+	<td data-field-name="performer">AC/DC</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1983</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q238235</td>
+	<td data-field-name="album">4</td>
+	<td data-field-name="performer">Beyoncé</td>
+	<td data-field-name="genre">contemporary R&B</td>
+	<td data-field-name="year">2011</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q328329</td>
+	<td data-field-name="album">Große Freiheit</td>
+	<td data-field-name="performer">Unheilig</td>
+	<td data-field-name="genre">pop rock</td>
+	<td data-field-name="year">2010</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q980121</td>
+	<td data-field-name="album">Last Time Around</td>
+	<td data-field-name="performer">Buffalo Springfield</td>
+	<td data-field-name="genre">folk rock</td>
+	<td data-field-name="year">1968</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1066401</td>
+	<td data-field-name="album">Permission to Land</td>
+	<td data-field-name="performer">The Darkness</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">2003</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q901854</td>
+	<td data-field-name="album">Fly on the Wall</td>
+	<td data-field-name="performer">AC/DC</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1985</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1068984</td>
+	<td data-field-name="album">Sleep Dirt</td>
+	<td data-field-name="performer">Frank Zappa</td>
+	<td data-field-name="genre">experimental rock</td>
+	<td data-field-name="year">1979</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q479275</td>
+	<td data-field-name="album">Abandon</td>
+	<td data-field-name="performer">Deep Purple</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1998</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q931908</td>
+	<td data-field-name="album">Un jour dans notre vie</td>
+	<td data-field-name="performer">Indochine</td>
+	<td data-field-name="genre">pop rock</td>
+	<td data-field-name="year">1993</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q832294</td>
+	<td data-field-name="album">Brand New Eyes</td>
+	<td data-field-name="performer">Paramore</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2009</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q970795</td>
+	<td data-field-name="album">The Idiot</td>
+	<td data-field-name="performer">Iggy Pop</td>
+	<td data-field-name="genre">post-punk</td>
+	<td data-field-name="year">1977</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q935417</td>
+	<td data-field-name="album">Born</td>
+	<td data-field-name="performer">Bond</td>
+	<td data-field-name="genre">crossover</td>
+	<td data-field-name="year">2000</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1025771</td>
+	<td data-field-name="album">Dead by April</td>
+	<td data-field-name="performer">Dead by April</td>
+	<td data-field-name="genre">metalcore</td>
+	<td data-field-name="year">2009</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1060474</td>
+	<td data-field-name="album">Meantime</td>
+	<td data-field-name="performer">Helmet</td>
+	<td data-field-name="genre">post-hardcore</td>
+	<td data-field-name="year">1992</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1014414</td>
+	<td data-field-name="album">Love</td>
+	<td data-field-name="performer">Mika Nakashima</td>
+	<td data-field-name="genre">easy listening</td>
+	<td data-field-name="year">2003</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q940682</td>
+	<td data-field-name="album">Last Night</td>
+	<td data-field-name="performer">Moby</td>
+	<td data-field-name="genre">house music</td>
+	<td data-field-name="year">2008</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q769307</td>
+	<td data-field-name="album">Angel of Babylon</td>
+	<td data-field-name="performer">Avantasia</td>
+	<td data-field-name="genre">power metal</td>
+	<td data-field-name="year">2010</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1064685</td>
+	<td data-field-name="album">In a Perfect World...</td>
+	<td data-field-name="performer">Keri Hilson</td>
+	<td data-field-name="genre">pop music</td>
+	<td data-field-name="year">2008</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q928733</td>
+	<td data-field-name="album">R&G (Rhythm & Gangsta): The Masterpiece</td>
+	<td data-field-name="performer">Snoop Dogg</td>
+	<td data-field-name="genre">hip hop</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1059604</td>
+	<td data-field-name="album">Terror Twilight</td>
+	<td data-field-name="performer">Pavement</td>
+	<td data-field-name="genre">indie rock</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1058017</td>
+	<td data-field-name="album">Today Is A Beautiful Day</td>
+	<td data-field-name="performer">Supercell</td>
+	<td data-field-name="genre">J-pop</td>
+	<td data-field-name="year">2011</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1143517</td>
+	<td data-field-name="album">Cult</td>
+	<td data-field-name="performer">Apocalyptica</td>
+	<td data-field-name="genre">cello rock</td>
+	<td data-field-name="year">2000</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q765665</td>
+	<td data-field-name="album">Autobiography</td>
+	<td data-field-name="performer">Ashlee Simpson</td>
+	<td data-field-name="genre">pop rock</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q941930</td>
+	<td data-field-name="album">My Song</td>
+	<td data-field-name="performer">Keith Jarrett</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1978</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q611079</td>
+	<td data-field-name="album">Kraftwerk</td>
+	<td data-field-name="performer">Kraftwerk</td>
+	<td data-field-name="genre">Krautrock</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1002861</td>
+	<td data-field-name="album">Forever Changes</td>
+	<td data-field-name="performer">Love</td>
+	<td data-field-name="genre">folk rock</td>
+	<td data-field-name="year">1967</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q739935</td>
+	<td data-field-name="album">Kiss</td>
+	<td data-field-name="performer">Kiss</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1030934</td>
+	<td data-field-name="album">Second Morning</td>
+	<td data-field-name="performer">Morning Musume</td>
+	<td data-field-name="genre">J-pop</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1634395</td>
+	<td data-field-name="album">Start Static</td>
+	<td data-field-name="performer">Sugarcult</td>
+	<td data-field-name="genre">pop punk</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1473113</td>
+	<td data-field-name="album">Ül</td>
+	<td data-field-name="performer">Kispál és a Borz</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1996</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1441005</td>
+	<td data-field-name="album">Power & the Glory</td>
+	<td data-field-name="performer">Saxon</td>
+	<td data-field-name="genre">heavy metal music</td>
+	<td data-field-name="year">1983</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1027644</td>
+	<td data-field-name="album">Snow on the Sahara</td>
+	<td data-field-name="performer">Anggun</td>
+	<td data-field-name="genre">pop rock</td>
+	<td data-field-name="year">1997</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q842214</td>
+	<td data-field-name="album">Fearless</td>
+	<td data-field-name="performer">Taylor Swift</td>
+	<td data-field-name="genre">country pop</td>
+	<td data-field-name="year">2008</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1027741</td>
+	<td data-field-name="album">Both Ways Open Jaws</td>
+	<td data-field-name="performer">The Dø</td>
+	<td data-field-name="genre">pop music</td>
+	<td data-field-name="year">2011</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1066328</td>
+	<td data-field-name="album">Party Rock</td>
+	<td data-field-name="performer">LMFAO</td>
+	<td data-field-name="genre">synthpop</td>
+	<td data-field-name="year">2009</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1346637</td>
+	<td data-field-name="album">Leave Home</td>
+	<td data-field-name="performer">Ramones</td>
+	<td data-field-name="genre">punk rock</td>
+	<td data-field-name="year">1977</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1509002</td>
+	<td data-field-name="album">Hooray for Boobies</td>
+	<td data-field-name="performer">Bloodhound Gang</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1066048</td>
+	<td data-field-name="album">Opheliac</td>
+	<td data-field-name="performer">Emilie Autumn</td>
+	<td data-field-name="genre">gothic rock</td>
+	<td data-field-name="year">2006</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1919585</td>
+	<td data-field-name="album">Panama</td>
+	<td data-field-name="performer">A Balladeer</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2006</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2093845</td>
+	<td data-field-name="album">All the Young Dudes</td>
+	<td data-field-name="performer">Mott the Hoople</td>
+	<td data-field-name="genre">glam rock</td>
+	<td data-field-name="year">1972</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1933921</td>
+	<td data-field-name="album">Hellbound</td>
+	<td data-field-name="performer">Warlock</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1985</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q849189</td>
+	<td data-field-name="album">Human</td>
+	<td data-field-name="performer">Death</td>
+	<td data-field-name="genre">death metal</td>
+	<td data-field-name="year">1991</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q858445</td>
+	<td data-field-name="album">Salisbury</td>
+	<td data-field-name="performer">Uriah Heep</td>
+	<td data-field-name="genre">progressive rock</td>
+	<td data-field-name="year">1971</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1320278</td>
+	<td data-field-name="album">This Christmas</td>
+	<td data-field-name="performer">John Travolta</td>
+	<td data-field-name="genre">Christmas music</td>
+	<td data-field-name="year">2012</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1759440</td>
+	<td data-field-name="album">Thug by Nature</td>
+	<td data-field-name="performer">Layzie Bone</td>
+	<td data-field-name="genre">Midwest hip hop</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1945993</td>
+	<td data-field-name="album">Before I Forget</td>
+	<td data-field-name="performer">Jon Lord</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1982</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1614831</td>
+	<td data-field-name="album">Twilight</td>
+	<td data-field-name="performer">Leona Lewis</td>
+	<td data-field-name="genre">soul music</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1755942</td>
+	<td data-field-name="album">From the Sounds Inside</td>
+	<td data-field-name="performer">John Frusciante</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2037214</td>
+	<td data-field-name="album">Lage Landen</td>
+	<td data-field-name="performer">Boudewijn de Groot</td>
+	<td data-field-name="genre">contemporary folk music</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1810255</td>
+	<td data-field-name="album">Transylvania 90210: Songs of Death, Dying, and the Dead</td>
+	<td data-field-name="performer">Wednesday 13</td>
+	<td data-field-name="genre">heavy metal music</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1755920</td>
+	<td data-field-name="album">Valley of the Damned</td>
+	<td data-field-name="performer">DragonForce</td>
+	<td data-field-name="genre">power metal</td>
+	<td data-field-name="year">2003</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1870199</td>
+	<td data-field-name="album">Released</td>
+	<td data-field-name="performer">Jade Warrior</td>
+	<td data-field-name="genre">progressive rock</td>
+	<td data-field-name="year">1971</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2304612</td>
+	<td data-field-name="album">South of Heaven, West of Hell</td>
+	<td data-field-name="performer">Dwight Yoakam</td>
+	<td data-field-name="genre">country music</td>
+	<td data-field-name="year">2000</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1953742</td>
+	<td data-field-name="album">Before the Storm</td>
+	<td data-field-name="performer">Darude</td>
+	<td data-field-name="genre">trance</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1577340</td>
+	<td data-field-name="album">Imperfect Harmonies</td>
+	<td data-field-name="performer">Serj Tankian</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2010</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2048798</td>
+	<td data-field-name="album">The Battle of Mexico City</td>
+	<td data-field-name="performer">Rage Against the Machine</td>
+	<td data-field-name="genre">concert film</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1939123</td>
+	<td data-field-name="album">Bloody Buccaneers</td>
+	<td data-field-name="performer">Golden Earring</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1991</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1755732</td>
+	<td data-field-name="album">This Note's for You</td>
+	<td data-field-name="performer">Neil Young</td>
+	<td data-field-name="genre">heartland rock</td>
+	<td data-field-name="year">1988</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1050503</td>
+	<td data-field-name="album">Above the Noise</td>
+	<td data-field-name="performer">McFly</td>
+	<td data-field-name="genre">electropop</td>
+	<td data-field-name="year">2010</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1050129</td>
+	<td data-field-name="album">Cat Scratch Fever</td>
+	<td data-field-name="performer">Ted Nugent</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1977</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2526545</td>
+	<td data-field-name="album">Abnormally Attracted to Sin</td>
+	<td data-field-name="performer">Tori Amos</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2009</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1946318</td>
+	<td data-field-name="album">Ry Cooder</td>
+	<td data-field-name="performer">Ry Cooder</td>
+	<td data-field-name="genre">roots rock</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2865906</td>
+	<td data-field-name="album">Universal Syncopations II</td>
+	<td data-field-name="performer">Miroslav Vitouš</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2523001</td>
+	<td data-field-name="album">Gone</td>
+	<td data-field-name="performer">Entwine</td>
+	<td data-field-name="genre">gothic metal</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3018892</td>
+	<td data-field-name="album">Vanilla Fudge</td>
+	<td data-field-name="performer">Vanilla Fudge</td>
+	<td data-field-name="genre">psychedelic rock</td>
+	<td data-field-name="year">1967</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3225796</td>
+	<td data-field-name="album">Le Pornographe</td>
+	<td data-field-name="performer">Georges Brassens</td>
+	<td data-field-name="genre">chanson</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1049886</td>
+	<td data-field-name="album">Ship Arriving Too Late to Save a Drowning Witch</td>
+	<td data-field-name="performer">Frank Zappa</td>
+	<td data-field-name="genre">progressive rock</td>
+	<td data-field-name="year">1982</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2412196</td>
+	<td data-field-name="album">The Jewel in the Lotus</td>
+	<td data-field-name="performer">Bennie Maupin</td>
+	<td data-field-name="genre">jazz fusion</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2006499</td>
+	<td data-field-name="album">True as Steel</td>
+	<td data-field-name="performer">Warlock</td>
+	<td data-field-name="genre">heavy metal music</td>
+	<td data-field-name="year">1986</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2412471</td>
+	<td data-field-name="album">Psyence Fiction</td>
+	<td data-field-name="performer">Unkle</td>
+	<td data-field-name="genre">trip hop</td>
+	<td data-field-name="year">1998</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3489315</td>
+	<td data-field-name="album">Soleil cherche futur</td>
+	<td data-field-name="performer">Hubert-Félix Thiéfaine</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1982</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2976228</td>
+	<td data-field-name="album">Classic Diamonds</td>
+	<td data-field-name="performer">Doro</td>
+	<td data-field-name="genre">heavy metal music</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3281536</td>
+	<td data-field-name="album">In Dreams</td>
+	<td data-field-name="performer">Roy Orbison</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1963</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3049806</td>
+	<td data-field-name="album">El Comunero</td>
+	<td data-field-name="performer">Thomas Jimenez</td>
+	<td data-field-name="genre">song</td>
+	<td data-field-name="year">2011</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3049072</td>
+	<td data-field-name="album">Scorching Beauty</td>
+	<td data-field-name="performer">Iron Butterfly</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2839225</td>
+	<td data-field-name="album">Alone Again</td>
+	<td data-field-name="performer">George Jones</td>
+	<td data-field-name="genre">country music</td>
+	<td data-field-name="year">1976</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q2475911</td>
+	<td data-field-name="album">Heartbreaker</td>
+	<td data-field-name="performer">BZN</td>
+	<td data-field-name="genre">pop music</td>
+	<td data-field-name="year">1986</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3012644</td>
+	<td data-field-name="album">It's a Compton Thang</td>
+	<td data-field-name="performer">Compton's Most Wanted</td>
+	<td data-field-name="genre">West Coast hip hop</td>
+	<td data-field-name="year">1990</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q1936905</td>
+	<td data-field-name="album">Dark Side of the Spoon</td>
+	<td data-field-name="performer">Ministry</td>
+	<td data-field-name="genre">industrial metal</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3027722</td>
+	<td data-field-name="album">Dig It!</td>
+	<td data-field-name="performer">John Coltrane</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1962</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3087000</td>
+	<td data-field-name="album">Freddie Foxxx Is Here</td>
+	<td data-field-name="performer">Freddie Foxxx</td>
+	<td data-field-name="genre">hip hop</td>
+	<td data-field-name="year">1989</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3497871</td>
+	<td data-field-name="album">Psychedelic Lollipop</td>
+	<td data-field-name="performer">Blues Magoos</td>
+	<td data-field-name="genre">garage rock</td>
+	<td data-field-name="year">1966</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3109355</td>
+	<td data-field-name="album">Love Letter</td>
+	<td data-field-name="performer">Gackt</td>
+	<td data-field-name="genre">J-pop</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4658535</td>
+	<td data-field-name="album">A New Sound... A New Star...</td>
+	<td data-field-name="performer">Jimmy Smith</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1956</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3641138</td>
+	<td data-field-name="album">Blue</td>
+	<td data-field-name="performer">Marc Storace</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1991</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3786340</td>
+	<td data-field-name="album">Hollywood Trash</td>
+	<td data-field-name="performer">King Kobra</td>
+	<td data-field-name="genre">heavy metal music</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3495539</td>
+	<td data-field-name="album">Voodoo People</td>
+	<td data-field-name="performer">The Prodigy</td>
+	<td data-field-name="genre">oldschool jungle</td>
+	<td data-field-name="year">1995</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3804024</td>
+	<td data-field-name="album">It Ain't Easy</td>
+	<td data-field-name="performer">Long John Baldry</td>
+	<td data-field-name="genre">blues rock</td>
+	<td data-field-name="year">1971</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3488082</td>
+	<td data-field-name="album">B. B. King & Friends: 80</td>
+	<td data-field-name="performer">B. B. King</td>
+	<td data-field-name="genre">blues</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3563275</td>
+	<td data-field-name="album">Vox</td>
+	<td data-field-name="performer">Malicorne</td>
+	<td data-field-name="genre">contemporary folk music</td>
+	<td data-field-name="year">1996</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4546987</td>
+	<td data-field-name="album">10th Anniversary Album</td>
+	<td data-field-name="performer">Nat King Cole</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1953</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3988161</td>
+	<td data-field-name="album">The Magnificent 7</td>
+	<td data-field-name="performer">The Supremes</td>
+	<td data-field-name="genre">disco</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4040825</td>
+	<td data-field-name="album">Huinya</td>
+	<td data-field-name="performer">The Tiger Lillies</td>
+	<td data-field-name="genre">ska</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3028561</td>
+	<td data-field-name="album">This Is Normal</td>
+	<td data-field-name="performer">GusGus</td>
+	<td data-field-name="genre">house music</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4868705</td>
+	<td data-field-name="album">Batch</td>
+	<td data-field-name="performer">Big Drill Car</td>
+	<td data-field-name="genre">pop punk</td>
+	<td data-field-name="year">1991</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3505035</td>
+	<td data-field-name="album">Tough Guys Don't Dance</td>
+	<td data-field-name="performer">High Contrast</td>
+	<td data-field-name="genre">drum and bass</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3069406</td>
+	<td data-field-name="album">Fernande</td>
+	<td data-field-name="performer">Joël Favreau</td>
+	<td data-field-name="genre">chanson</td>
+	<td data-field-name="year">1972</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4994153</td>
+	<td data-field-name="album">East Bay Grease</td>
+	<td data-field-name="performer">Tower of Power</td>
+	<td data-field-name="genre">soul music</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3548399</td>
+	<td data-field-name="album">Un bruit qui court</td>
+	<td data-field-name="performer">Pauline Croze</td>
+	<td data-field-name="genre">chanson</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4633390</td>
+	<td data-field-name="album">2 Trumpets</td>
+	<td data-field-name="performer">Art Farmer</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3236036</td>
+	<td data-field-name="album">Les Versions longues</td>
+	<td data-field-name="performer">Indochine</td>
+	<td data-field-name="genre">new wave music</td>
+	<td data-field-name="year">1996</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3368423</td>
+	<td data-field-name="album">Passé le Rio Grande</td>
+	<td data-field-name="performer">Alain Bashung</td>
+	<td data-field-name="genre">pop rock</td>
+	<td data-field-name="year">1986</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5168260</td>
+	<td data-field-name="album">Copacabana</td>
+	<td data-field-name="performer">Sarah Vaughan</td>
+	<td data-field-name="genre">bossa nova</td>
+	<td data-field-name="year">1979</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4749973</td>
+	<td data-field-name="album">An Evening with Oscar Peterson</td>
+	<td data-field-name="performer">Oscar Peterson</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1952</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4037262</td>
+	<td data-field-name="album">Deus ex Machina</td>
+	<td data-field-name="performer">Liv Kristine</td>
+	<td data-field-name="genre">gothic rock</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3895022</td>
+	<td data-field-name="album">Paradiso</td>
+	<td data-field-name="performer">Metamorfosi</td>
+	<td data-field-name="genre">progressive rock</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5410704</td>
+	<td data-field-name="album">Euphrates River</td>
+	<td data-field-name="performer">The Main Ingredient</td>
+	<td data-field-name="genre">soul music</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4742361</td>
+	<td data-field-name="album">Amen!</td>
+	<td data-field-name="performer">Della Reese</td>
+	<td data-field-name="genre">gospel music</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4866639</td>
+	<td data-field-name="album">Based on a True Story</td>
+	<td data-field-name="performer">Trick Daddy</td>
+	<td data-field-name="genre">Gangsta rap</td>
+	<td data-field-name="year">1997</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3704623</td>
+	<td data-field-name="album">Dedicated</td>
+	<td data-field-name="performer">Barry White</td>
+	<td data-field-name="genre">soul music</td>
+	<td data-field-name="year">1983</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3149724</td>
+	<td data-field-name="album">In the Garden</td>
+	<td data-field-name="performer">Mano Solo</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3086384</td>
+	<td data-field-name="album">Françoise</td>
+	<td data-field-name="performer">Françoise Hardy</td>
+	<td data-field-name="genre">popular music</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5897473</td>
+	<td data-field-name="album">Hood Hop 2</td>
+	<td data-field-name="performer">J-Kwon</td>
+	<td data-field-name="genre">hip hop</td>
+	<td data-field-name="year">2009</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4928601</td>
+	<td data-field-name="album">Blowing in from Chicago</td>
+	<td data-field-name="performer">Clifford Jordan</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5357230</td>
+	<td data-field-name="album">Electra 2000</td>
+	<td data-field-name="performer">Hum</td>
+	<td data-field-name="genre">indie rock</td>
+	<td data-field-name="year">1993</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4897079</td>
+	<td data-field-name="album">Bestial</td>
+	<td data-field-name="performer">Barrabás</td>
+	<td data-field-name="genre">disco</td>
+	<td data-field-name="year">1982</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5191839</td>
+	<td data-field-name="album">Cuando la Sangre Galopa</td>
+	<td data-field-name="performer">Jaguares</td>
+	<td data-field-name="genre">Rock en español</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5890919</td>
+	<td data-field-name="album">Hommage</td>
+	<td data-field-name="performer">Andrew Hill</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5132880</td>
+	<td data-field-name="album">Clifford Brown & Max Roach</td>
+	<td data-field-name="performer">Clifford Brown</td>
+	<td data-field-name="genre">bebop</td>
+	<td data-field-name="year">1954</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5896495</td>
+	<td data-field-name="album">Honky Tonk Man</td>
+	<td data-field-name="performer">Steve Young</td>
+	<td data-field-name="genre">country rock</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5649693</td>
+	<td data-field-name="album">10 de corazón</td>
+	<td data-field-name="performer">Camela</td>
+	<td data-field-name="genre">techno</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5299554</td>
+	<td data-field-name="album">Douar Nevez</td>
+	<td data-field-name="performer">Dan Ar Braz</td>
+	<td data-field-name="genre">Music of Brittany</td>
+	<td data-field-name="year">1977</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7037469</td>
+	<td data-field-name="album">Nilsson Sings Newman</td>
+	<td data-field-name="performer">Harry Nilsson</td>
+	<td data-field-name="genre">pop music</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4928431</td>
+	<td data-field-name="album">Blossom Dearie</td>
+	<td data-field-name="performer">Blossom Dearie</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5460516</td>
+	<td data-field-name="album">Floreciendo!</td>
+	<td data-field-name="performer">Yolandita Monge</td>
+	<td data-field-name="genre">Latin pop</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q3481246</td>
+	<td data-field-name="album">Shake Some Action</td>
+	<td data-field-name="performer">Flamin' Groovies</td>
+	<td data-field-name="genre">power pop</td>
+	<td data-field-name="year">1976</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5652964</td>
+	<td data-field-name="album">7</td>
+	<td data-field-name="performer">PapaNegro</td>
+	<td data-field-name="genre">funk</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5463325</td>
+	<td data-field-name="album">Flyin' High</td>
+	<td data-field-name="performer">Blackfoot</td>
+	<td data-field-name="genre">Southern rock</td>
+	<td data-field-name="year">1976</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6810879</td>
+	<td data-field-name="album">Mel Tormé and the Marty Paich Dek-Tette</td>
+	<td data-field-name="performer">Mel Tormé</td>
+	<td data-field-name="genre">vocal jazz</td>
+	<td data-field-name="year">1956</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5262486</td>
+	<td data-field-name="album">Derek and Clive Ad Nauseam</td>
+	<td data-field-name="performer">Derek and Clive</td>
+	<td data-field-name="genre">comedy</td>
+	<td data-field-name="year">1978</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q4677061</td>
+	<td data-field-name="album">Action</td>
+	<td data-field-name="performer">Punchline</td>
+	<td data-field-name="genre">pop punk</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6012394</td>
+	<td data-field-name="album">In the Land of Hi-Fi with Julian Cannonball Adderley</td>
+	<td data-field-name="performer">Cannonball Adderley</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1956</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5469474</td>
+	<td data-field-name="album">Forever Yours</td>
+	<td data-field-name="performer">Dottie West</td>
+	<td data-field-name="genre">country music</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6545612</td>
+	<td data-field-name="album">Lift Every Voice</td>
+	<td data-field-name="performer">Andrew Hill</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6545596</td>
+	<td data-field-name="album">Lift</td>
+	<td data-field-name="performer">Audio Adrenaline</td>
+	<td data-field-name="genre">Christian rock</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5564440</td>
+	<td data-field-name="album">Girl Talk</td>
+	<td data-field-name="performer">Shirley Scott</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1967</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7204268</td>
+	<td data-field-name="album">Pleasure</td>
+	<td data-field-name="performer">Ohio Players</td>
+	<td data-field-name="genre">soul music</td>
+	<td data-field-name="year">1972</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6690912</td>
+	<td data-field-name="album">Love Kraft</td>
+	<td data-field-name="performer">Super Furry Animals</td>
+	<td data-field-name="genre">indie rock</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7100261</td>
+	<td data-field-name="album">Orchestral Works</td>
+	<td data-field-name="performer">Duke Ellington</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7460338</td>
+	<td data-field-name="album">Shades of Rock</td>
+	<td data-field-name="performer">The Shadows</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7786204</td>
+	<td data-field-name="album">This One's for Basie</td>
+	<td data-field-name="performer">Buddy Rich</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q5420655</td>
+	<td data-field-name="album">Exorcise the Demons</td>
+	<td data-field-name="performer">Source Direct</td>
+	<td data-field-name="genre">drum and bass</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7106197</td>
+	<td data-field-name="album">Oscar Peterson and Harry Edison</td>
+	<td data-field-name="performer">Oscar Peterson</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7425974</td>
+	<td data-field-name="album">Satch and Josh...Again</td>
+	<td data-field-name="performer">Count Basie</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1978</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6945702</td>
+	<td data-field-name="album">My Huckleberry Friend</td>
+	<td data-field-name="performer">Johnny Mercer</td>
+	<td data-field-name="genre">traditional pop music</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7662725</td>
+	<td data-field-name="album">Synthetic Division</td>
+	<td data-field-name="performer">Crossbreed</td>
+	<td data-field-name="genre">nu metal</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7661654</td>
+	<td data-field-name="album">Symphony for the Devil</td>
+	<td data-field-name="performer">Witchery</td>
+	<td data-field-name="genre">thrash metal</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7263231</td>
+	<td data-field-name="album">Pyramid</td>
+	<td data-field-name="performer">Nat Adderley</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7111822</td>
+	<td data-field-name="album">Out on a Limb with Clark Terry</td>
+	<td data-field-name="performer">Clark Terry</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7751889</td>
+	<td data-field-name="album">The Modern Tribe</td>
+	<td data-field-name="performer">Celebration</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7137313</td>
+	<td data-field-name="album">Paris Jazz Piano</td>
+	<td data-field-name="performer">Michel Legrand</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1959</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7573156</td>
+	<td data-field-name="album">Spanish Bitch</td>
+	<td data-field-name="performer">Mal Waldron</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7263633</td>
+	<td data-field-name="album">Pyroclastics</td>
+	<td data-field-name="performer">Birdsongs of the Mesozoic</td>
+	<td data-field-name="genre">progressive rock</td>
+	<td data-field-name="year">1992</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7157410</td>
+	<td data-field-name="album">Peace Orchestra</td>
+	<td data-field-name="performer">Peace Orchestra</td>
+	<td data-field-name="genre">trip hop</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7301339</td>
+	<td data-field-name="album">Realm of Wonders</td>
+	<td data-field-name="performer">Fairyland</td>
+	<td data-field-name="genre">power metal</td>
+	<td data-field-name="year">2000</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6484117</td>
+	<td data-field-name="album">Land of Cockayne</td>
+	<td data-field-name="performer">Soft Machine</td>
+	<td data-field-name="genre">jazz fusion</td>
+	<td data-field-name="year">1981</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7261123</td>
+	<td data-field-name="album">Pure Prairie League</td>
+	<td data-field-name="performer">Pure Prairie League</td>
+	<td data-field-name="genre">country rock</td>
+	<td data-field-name="year">1972</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7642859</td>
+	<td data-field-name="album">Super Tasty</td>
+	<td data-field-name="performer">Gumball</td>
+	<td data-field-name="genre">indie rock</td>
+	<td data-field-name="year">1993</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q10268460</td>
+	<td data-field-name="album">Double Face</td>
+	<td data-field-name="performer">Zezé Di Camargo & Luciano</td>
+	<td data-field-name="genre">Música sertaneja</td>
+	<td data-field-name="year">2010</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7992798</td>
+	<td data-field-name="album">When We Were Small</td>
+	<td data-field-name="performer">Rosie Thomas</td>
+	<td data-field-name="genre">indie folk</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7962464</td>
+	<td data-field-name="album">Walking Papers</td>
+	<td data-field-name="performer">Walking Papers</td>
+	<td data-field-name="genre">punk rock</td>
+	<td data-field-name="year">2006</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q6675476</td>
+	<td data-field-name="album">Lookout Farm</td>
+	<td data-field-name="performer">Dave Liebman</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q10667891</td>
+	<td data-field-name="album">Silver Lining</td>
+	<td data-field-name="performer">Nils Lofgren</td>
+	<td data-field-name="genre">pop rock</td>
+	<td data-field-name="year">1991</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q12024425</td>
+	<td data-field-name="album">Jedůfky</td>
+	<td data-field-name="performer">Karel Kryl</td>
+	<td data-field-name="genre">contemporary folk music</td>
+	<td data-field-name="year">1996</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7716946</td>
+	<td data-field-name="album">The Best of Celly Cel</td>
+	<td data-field-name="performer">Celly Cel</td>
+	<td data-field-name="genre">Gangsta rap</td>
+	<td data-field-name="year">1999</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7743461</td>
+	<td data-field-name="album">The Joker</td>
+	<td data-field-name="performer">Steve Miller Band</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1973</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7993856</td>
+	<td data-field-name="album">Whiskey Before Breakfast</td>
+	<td data-field-name="performer">Norman Blake</td>
+	<td data-field-name="genre">Americana</td>
+	<td data-field-name="year">1976</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q11853273</td>
+	<td data-field-name="album">Atlantis</td>
+	<td data-field-name="performer">Mikko Kuustonen</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">2000</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7711202</td>
+	<td data-field-name="album">That Healin' Feelin'</td>
+	<td data-field-name="performer">Horace Silver</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q8052933</td>
+	<td data-field-name="album">Yessir, That's My Baby</td>
+	<td data-field-name="performer">Count Basie</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1978</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q10776312</td>
+	<td data-field-name="album">Alibaba A 40 Krátkych Songov</td>
+	<td data-field-name="performer">Horkýže Slíže</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">2003</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q12054198</td>
+	<td data-field-name="album">Shuttle to Bethlehem</td>
+	<td data-field-name="performer">Robert Křesťan</td>
+	<td data-field-name="genre">contemporary folk music</td>
+	<td data-field-name="year">2011</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7767692</td>
+	<td data-field-name="album">The Swingin' Miss "D"</td>
+	<td data-field-name="performer">Dinah Washington</td>
+	<td data-field-name="genre">vocal jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q11762652</td>
+	<td data-field-name="album">Lost and Found</td>
+	<td data-field-name="performer">AnnaGrace</td>
+	<td data-field-name="genre">techno</td>
+	<td data-field-name="year">2004</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q15406878</td>
+	<td data-field-name="album">Songs</td>
+	<td data-field-name="performer">Dan Ar Braz</td>
+	<td data-field-name="genre">Music of Brittany</td>
+	<td data-field-name="year">1990</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7920259</td>
+	<td data-field-name="album">Venting</td>
+	<td data-field-name="performer">Five.Bolt.Main</td>
+	<td data-field-name="genre">post-grunge</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q12019520</td>
+	<td data-field-name="album">Here</td>
+	<td data-field-name="performer">Adrian Belew</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1994</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17007834</td>
+	<td data-field-name="album">Greatest Hits</td>
+	<td data-field-name="performer">David Cassidy</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1974</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17065914</td>
+	<td data-field-name="album">Quadrama</td>
+	<td data-field-name="performer">Gil Mellé</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7732978</td>
+	<td data-field-name="album">The Fabric of Jazz</td>
+	<td data-field-name="performer">Yusef Lateef</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1959</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17040718</td>
+	<td data-field-name="album">Max Roach + 4 on the Chicago Scene</td>
+	<td data-field-name="performer">Max Roach</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q16245587</td>
+	<td data-field-name="album">Chefa</td>
+	<td data-field-name="performer">Miss Platnum</td>
+	<td data-field-name="genre">hip hop</td>
+	<td data-field-name="year">2007</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17280444</td>
+	<td data-field-name="album">36 heures de la vie d'une femme (parce que 24, c'est pas assez)</td>
+	<td data-field-name="performer">Agnès Bihl</td>
+	<td data-field-name="genre">chanson</td>
+	<td data-field-name="year">2013</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q7732683</td>
+	<td data-field-name="album">The Everly Brothers</td>
+	<td data-field-name="performer">Everly Brothers</td>
+	<td data-field-name="genre">rock and roll</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17436634</td>
+	<td data-field-name="album">Red Sea</td>
+	<td data-field-name="performer">Warhorse</td>
+	<td data-field-name="genre">hard rock</td>
+	<td data-field-name="year">1970</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q18209944</td>
+	<td data-field-name="album">The Mindsweep</td>
+	<td data-field-name="performer">Enter Shikari</td>
+	<td data-field-name="genre">electronicore</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q16490580</td>
+	<td data-field-name="album">Angélica</td>
+	<td data-field-name="performer">Angélica</td>
+	<td data-field-name="genre">pop music</td>
+	<td data-field-name="year">1992</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q16584737</td>
+	<td data-field-name="album">Ossian</td>
+	<td data-field-name="performer">Osjan</td>
+	<td data-field-name="genre">contemporary folk music</td>
+	<td data-field-name="year">1980</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q19895561</td>
+	<td data-field-name="album">Roots</td>
+	<td data-field-name="performer">Idrees Sulieman</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q16535935</td>
+	<td data-field-name="album">Bandido</td>
+	<td data-field-name="performer">Miguel Bosé</td>
+	<td data-field-name="genre">pop music</td>
+	<td data-field-name="year">1984</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17013315</td>
+	<td data-field-name="album">Implosions</td>
+	<td data-field-name="performer">Stephan Micus</td>
+	<td data-field-name="genre">world music</td>
+	<td data-field-name="year">1977</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17026245</td>
+	<td data-field-name="album">Sunburst</td>
+	<td data-field-name="performer">Eddie Henderson</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17151066</td>
+	<td data-field-name="album">Rise</td>
+	<td data-field-name="performer">Taeyang</td>
+	<td data-field-name="genre">K-pop</td>
+	<td data-field-name="year">2014</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17015936</td>
+	<td data-field-name="album">Johnny Griffin</td>
+	<td data-field-name="performer">Johnny Griffin</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q13736294</td>
+	<td data-field-name="album">Jansmit.com</td>
+	<td data-field-name="performer">Jan Smit</td>
+	<td data-field-name="genre">Palingsound</td>
+	<td data-field-name="year">2005</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q16997792</td>
+	<td data-field-name="album">Mike Harrison</td>
+	<td data-field-name="performer">Mike Harrison</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">1971</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20871907</td>
+	<td data-field-name="album">Disconnected</td>
+	<td data-field-name="performer">Chipzel</td>
+	<td data-field-name="genre">chiptune</td>
+	<td data-field-name="year">2010</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q16976535</td>
+	<td data-field-name="album">Jazz Impressions of the U.S.A.</td>
+	<td data-field-name="performer">Dave Brubeck</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17092626</td>
+	<td data-field-name="album">Raising Fear</td>
+	<td data-field-name="performer">Armored Saint</td>
+	<td data-field-name="genre">traditional heavy metal</td>
+	<td data-field-name="year">1987</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q18339183</td>
+	<td data-field-name="album">Black Moon Rising</td>
+	<td data-field-name="performer">TeddyLoid</td>
+	<td data-field-name="genre">electropop</td>
+	<td data-field-name="year">2014</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q19607076</td>
+	<td data-field-name="album">3</td>
+	<td data-field-name="performer">Complexo J</td>
+	<td data-field-name="genre">progressive rock</td>
+	<td data-field-name="year">1992</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17522737</td>
+	<td data-field-name="album">Ultimatum</td>
+	<td data-field-name="performer">Royal Frenz</td>
+	<td data-field-name="genre">hip hop</td>
+	<td data-field-name="year">2011</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20686013</td>
+	<td data-field-name="album">Beauty Behind the Madness</td>
+	<td data-field-name="performer">The Weeknd</td>
+	<td data-field-name="genre">contemporary R&B</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q21768303</td>
+	<td data-field-name="album">Termixes</td>
+	<td data-field-name="performer">Tata Bojs</td>
+	<td data-field-name="genre">rock music</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20760299</td>
+	<td data-field-name="album">Wherever the Five Winds Blow</td>
+	<td data-field-name="performer">Shorty Rogers</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q15728733</td>
+	<td data-field-name="album">Peckin' Time</td>
+	<td data-field-name="performer">Hank Mobley</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1959</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q24077975</td>
+	<td data-field-name="album">The Drum Suite</td>
+	<td data-field-name="performer">Manny Albam</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1956</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20012297</td>
+	<td data-field-name="album">The Anthropocene Extinction</td>
+	<td data-field-name="performer">Cattle Decapitation</td>
+	<td data-field-name="genre">deathgrind</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q25095369</td>
+	<td data-field-name="album">Mr. Rhythm</td>
+	<td data-field-name="performer">Freddie Green</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1956</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q24965803</td>
+	<td data-field-name="album">Earl Hines Plays Cole Porter</td>
+	<td data-field-name="performer">Earl Hines</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q25095868</td>
+	<td data-field-name="album">Kismet</td>
+	<td data-field-name="performer">Buddy Montgomery</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20814383</td>
+	<td data-field-name="album">You Get More Bounce with Curtis Counce!</td>
+	<td data-field-name="performer">Curtis Counce</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q15651488</td>
+	<td data-field-name="album">The Take Off and Landing of Everything</td>
+	<td data-field-name="performer">Elbow</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2014</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q26386518</td>
+	<td data-field-name="album">Royal Rappin's</td>
+	<td data-field-name="performer">Millie Jackson</td>
+	<td data-field-name="genre">soul music</td>
+	<td data-field-name="year">1979</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q17048765</td>
+	<td data-field-name="album">Spirit Man</td>
+	<td data-field-name="performer">Weldon Irvine</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q28120234</td>
+	<td data-field-name="album">Lowtide</td>
+	<td data-field-name="performer">Lowtide</td>
+	<td data-field-name="genre">shoegazing</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q15928628</td>
+	<td data-field-name="album">Three Trumpets</td>
+	<td data-field-name="performer">Idrees Sulieman</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1957</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20656802</td>
+	<td data-field-name="album">The Chico Hamilton Quintet with Strings Attached</td>
+	<td data-field-name="performer">Chico Hamilton</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1959</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20813552</td>
+	<td data-field-name="album">Jazz Giant</td>
+	<td data-field-name="performer">Benny Carter</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1958</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q26252668</td>
+	<td data-field-name="album">Splendor & Misery</td>
+	<td data-field-name="performer">Clipping.</td>
+	<td data-field-name="genre">experimental hip hop</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q24077895</td>
+	<td data-field-name="album">Beloved Hymns</td>
+	<td data-field-name="performer">Bing Crosby</td>
+	<td data-field-name="genre">religious music</td>
+	<td data-field-name="year">1951</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q25713844</td>
+	<td data-field-name="album">A Day For The Hunter, A Day For The Prey</td>
+	<td data-field-name="performer">Leyla McCalla</td>
+	<td data-field-name="genre">blues</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q15177767</td>
+	<td data-field-name="album">Get Your Heart On - The Second Coming!</td>
+	<td data-field-name="performer">Simple Plan</td>
+	<td data-field-name="genre">alternative rock</td>
+	<td data-field-name="year">2013</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q25094668</td>
+	<td data-field-name="album">Restless Ones</td>
+	<td data-field-name="performer">Heartless Bastards</td>
+	<td data-field-name="genre">blues rock</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q25094646</td>
+	<td data-field-name="album">Lost Ritual</td>
+	<td data-field-name="performer">Raging Speedhorn</td>
+	<td data-field-name="genre">sludge metal</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20648779</td>
+	<td data-field-name="album">You Can't Stop Destiny</td>
+	<td data-field-name="performer">Papoose</td>
+	<td data-field-name="genre">hip hop</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20647368</td>
+	<td data-field-name="album">Grey Tickles, Black Pressure</td>
+	<td data-field-name="performer">John Grant</td>
+	<td data-field-name="genre">soft rock</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q28452729</td>
+	<td data-field-name="album">Porgy & Bess</td>
+	<td data-field-name="performer">Buddy Collette</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1959</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q24436654</td>
+	<td data-field-name="album">Unleashed</td>
+	<td data-field-name="performer">Skillet</td>
+	<td data-field-name="genre">Christian metal</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q21754190</td>
+	<td data-field-name="album">Dom s normal'nymi yavleniyami</td>
+	<td data-field-name="performer">Scriptonite</td>
+	<td data-field-name="genre">hip hop</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q25095266</td>
+	<td data-field-name="album">Basie</td>
+	<td data-field-name="performer">Count Basie</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1955</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q27061882</td>
+	<td data-field-name="album">Delta</td>
+	<td data-field-name="performer">M Clan</td>
+	<td data-field-name="genre">country music</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q20813432</td>
+	<td data-field-name="album">Hanky Panky</td>
+	<td data-field-name="performer">Hank Jones</td>
+	<td data-field-name="genre">jazz</td>
+	<td data-field-name="year">1975</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q22348148</td>
+	<td data-field-name="album">Winterval</td>
+	<td data-field-name="performer">Replicator</td>
+	<td data-field-name="genre">noise rock</td>
+	<td data-field-name="year">2001</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q23013542</td>
+	<td data-field-name="album">Attachment</td>
+	<td data-field-name="performer">Jason van Wyk</td>
+	<td data-field-name="genre">electronic music</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q21198173</td>
+	<td data-field-name="album">Faithless 2.0</td>
+	<td data-field-name="performer">Faithless</td>
+	<td data-field-name="genre">trance</td>
+	<td data-field-name="year">2015</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q24264241</td>
+	<td data-field-name="album">Elastinen feat.</td>
+	<td data-field-name="performer">Elastinen</td>
+	<td data-field-name="genre">pop-rap</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q21130146</td>
+	<td data-field-name="album">Chuck Person's Eccojams Vol. 1</td>
+	<td data-field-name="performer">Oneohtrix Point Never</td>
+	<td data-field-name="genre">Vaporwave</td>
+	<td data-field-name="year">2010</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q28018395</td>
+	<td data-field-name="album">More</td>
+	<td data-field-name="performer">Jordan Randall Smith</td>
+	<td data-field-name="genre">classical music</td>
+	<td data-field-name="year">2016</td>
+</tr>
+<tr>
+	<td data-field-name="album_url">http://www.wikidata.org/entity/Q28018411</td>
+	<td data-field-name="album">Symphony Number One</td>
+	<td data-field-name="performer">Jordan Thomas</td>
+	<td data-field-name="genre">classical music</td>
+	<td data-field-name="year">2015</td>
+</tr>
+</table>
+</body>
+</html>

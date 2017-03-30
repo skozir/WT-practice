@@ -1,0 +1,17 @@
+SELECT DISTINCT ?country ?countryLabel ?capital_title (SAMPLE(?language_title) as ?language_first) (SAMPLE(?currency_title) as ?currency_first)
+WHERE
+{
+  ?country wdt:P31 wd:Q3624078 .
+  FILTER NOT EXISTS {?country wdt:P31 wd:Q3024240}
+  ?country wdt:P36 ?capital.
+  ?capital rdfs:label ?capital_title filter (lang(?capital_title) = "ru").
+  ?country wdt:P37 ?language.
+  ?language rdfs:label ?language_title filter (lang(?language_title) = "ru").
+  ?country wdt:P38 ?currency.
+  ?currency rdfs:label ?currency_title filter (lang(?currency_title) = "ru").
+  
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "ru" }
+}
+GROUP BY ?country ?countryLabel ?capital_title
+ORDER BY ?countryLabel

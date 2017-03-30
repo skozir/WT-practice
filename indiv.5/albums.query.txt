@@ -1,0 +1,12 @@
+SELECT DISTINCT ?album ?album_label ?performer_label ?genre_label ?publication WHERE {
+  ?album wdt:P31 wd:Q482994.
+  ?album rdfs:label ?album_label.
+  ?album wdt:P175 ?performer.
+  ?performer rdfs:label ?performer_label FILTER((LANG(?performer_label)) = "en")
+  ?album wdt:P136 ?genre.
+  ?genre rdfs:label ?genre_label FILTER((LANG(?genre_label)) = "en")
+  ?album wdt:P577 ?publication.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  FILTER((LANG(?album_label)) = "en")
+}
+ORDER BY ?countryLabel

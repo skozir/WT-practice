@@ -1,0 +1,201 @@
+country_url,country,capital,language,currency
+http://www.wikidata.org/entity/Q408,Австралия,Канберра,английский язык,австралийский доллар
+http://www.wikidata.org/entity/Q40,Австрия,Вена,немецкий язык,евро
+http://www.wikidata.org/entity/Q227,Азербайджан,Баку,азербайджанский язык,азербайджанский манат
+http://www.wikidata.org/entity/Q222,Албания,Тирана,албанский язык,албанский лек
+http://www.wikidata.org/entity/Q262,Алжир,Алжир,арабский язык,алжирский динар
+http://www.wikidata.org/entity/Q916,Ангола,Луанда,португальский язык,ангольская кванза
+http://www.wikidata.org/entity/Q228,Андорра,Андорра-ла-Велья,каталанский язык,евро
+http://www.wikidata.org/entity/Q781,Антигуа и Барбуда,Сент-Джонс,английский язык,восточно-карибский доллар
+http://www.wikidata.org/entity/Q414,Аргентина,Буэнос-Айрес,испанский язык,аргентинское песо
+http://www.wikidata.org/entity/Q399,Армения,Ереван,армянский язык,армянский драм
+http://www.wikidata.org/entity/Q889,Афганистан,Кабул,Пушту,афгани
+http://www.wikidata.org/entity/Q778,Багамские Острова,Нассау,английский язык,багамский доллар
+http://www.wikidata.org/entity/Q902,Бангладеш,Дакка,бенгальский язык,бангладешская така
+http://www.wikidata.org/entity/Q244,Барбадос,Бриджтаун,английский язык,барбадосский доллар
+http://www.wikidata.org/entity/Q398,Бахрейн,Манама,арабский язык,бахрейнский динар
+http://www.wikidata.org/entity/Q242,Белиз,Бельмопан,английский язык,белизский доллар
+http://www.wikidata.org/entity/Q184,Белоруссия,Минск,белорусский язык,белорусский рубль
+http://www.wikidata.org/entity/Q31,Бельгия,Брюссель,французский язык,евро
+http://www.wikidata.org/entity/Q962,Бенин,Порто-Ново,французский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q219,Болгария,София,болгарский язык,болгарский лев
+http://www.wikidata.org/entity/Q750,Боливия,Ла-Пас,испанский язык,боливиано
+http://www.wikidata.org/entity/Q750,Боливия,Сукре,испанский язык,боливиано
+http://www.wikidata.org/entity/Q225,Босния и Герцеговина,Сараево,хорватский язык,конвертируемая марка
+http://www.wikidata.org/entity/Q963,Ботсвана,Габороне,английский язык,Ботсванская пула
+http://www.wikidata.org/entity/Q155,Бразилия,Бразилиа,португальский язык,бразильский реал
+http://www.wikidata.org/entity/Q921,Бруней,Бандар-Сери-Бегаван,английский язык,брунейский доллар
+http://www.wikidata.org/entity/Q965,Буркина-Фасо,Уагадугу,французский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q967,Бурунди,Бужумбура,английский язык,Бурундийский франк
+http://www.wikidata.org/entity/Q917,Бутан,Тхимпху,Дзонг-кэ,нгултрум
+http://www.wikidata.org/entity/Q686,Вануату,Порт-Вила,французский язык,вату
+http://www.wikidata.org/entity/Q145,Великобритания,Лондон,валлийский язык,фунт стерлингов
+http://www.wikidata.org/entity/Q28,Венгрия,Будапешт,венгерский язык,венгерский форинт
+http://www.wikidata.org/entity/Q717,Венесуэла,Каракас,испанский язык,венесуэльский боливар
+http://www.wikidata.org/entity/Q574,Восточный Тимор,Дили,португальский язык,доллар США
+http://www.wikidata.org/entity/Q881,Вьетнам,Ханой,вьетнамский язык,вьетнамский донг
+http://www.wikidata.org/entity/Q1000,Габон,Либревиль,французский язык,франк КФА BEAC
+http://www.wikidata.org/entity/Q734,Гайана,Джорджтаун,английский язык,гайанский доллар
+http://www.wikidata.org/entity/Q1005,Гамбия,Банжул,английский язык,Гамбийский даласи
+http://www.wikidata.org/entity/Q117,Гана,Аккра,английский язык,Ганский седи
+http://www.wikidata.org/entity/Q774,Гватемала,Гватемала,испанский язык,гватемальский кетсаль
+http://www.wikidata.org/entity/Q1006,Гвинея,Конакри,французский язык,Гвинейский франк
+http://www.wikidata.org/entity/Q1007,Гвинея-Бисау,Бисау,португальский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q183,Германия,Берлин,немецкий язык,евро
+http://www.wikidata.org/entity/Q783,Гондурас,Тегусигальпа,испанский язык,гондурасская лемпира
+http://www.wikidata.org/entity/Q769,Гренада,Сент-Джорджес,английский язык,восточно-карибский доллар
+http://www.wikidata.org/entity/Q41,Греция,Афины,новогреческий язык,евро
+http://www.wikidata.org/entity/Q230,Грузия,Тбилиси,грузинский язык,грузинский лари
+http://www.wikidata.org/entity/Q230,Грузия,Кутаиси,грузинский язык,грузинский лари
+http://www.wikidata.org/entity/Q974,Демократическая Республика Конго,Киншаса,французский язык,Конголезский франк
+http://www.wikidata.org/entity/Q977,Джибути,Джибути,арабский язык,Франк Джибути
+http://www.wikidata.org/entity/Q784,Доминика,Розо,английский язык,восточно-карибский доллар
+http://www.wikidata.org/entity/Q786,Доминиканская Республика,Санто-Доминго,испанский язык,доминиканское песо
+http://www.wikidata.org/entity/Q79,Египет,Каир,арабский язык,египетский фунт
+http://www.wikidata.org/entity/Q953,Замбия,Лусака,английский язык,Замбийская квача
+http://www.wikidata.org/entity/Q954,Зимбабве,Хараре,шона,доллар США
+http://www.wikidata.org/entity/Q801,Израиль,Иерусалим,иврит,новый израильский шекель
+http://www.wikidata.org/entity/Q668,Индия,Нью-Дели,хинди,индийская рупия
+http://www.wikidata.org/entity/Q252,Индонезия,Джакарта,индонезийский язык,индонезийская рупия
+http://www.wikidata.org/entity/Q810,Иордания,Амман,арабский язык,иорданский динар
+http://www.wikidata.org/entity/Q796,Ирак,Багдад,курдские языки,иракский динар
+http://www.wikidata.org/entity/Q794,Иран,Тегеран,персидский язык,иранский риал
+http://www.wikidata.org/entity/Q27,Ирландия,Дублин,английский язык,евро
+http://www.wikidata.org/entity/Q189,Исландия,Рейкьявик,исландский язык,исландская крона
+http://www.wikidata.org/entity/Q29,Испания,Мадрид,каталанский язык,евро
+http://www.wikidata.org/entity/Q38,Италия,Рим,итальянский язык,евро
+http://www.wikidata.org/entity/Q805,Йемен,Сана,арабский язык,йеменский риал
+http://www.wikidata.org/entity/Q1011,Кабо-Верде,Прая,португальский язык,Эскудо Кабо-Верде
+http://www.wikidata.org/entity/Q232,Казахстан,Астана,казахский язык,казахстанский тенге
+http://www.wikidata.org/entity/Q424,Камбоджа,Пномпень,кхмерский язык,камбоджийский риель
+http://www.wikidata.org/entity/Q1009,Камерун,Яунде,английский язык,франк КФА BEAC
+http://www.wikidata.org/entity/Q16,Канада,Оттава,французский язык,канадский доллар
+http://www.wikidata.org/entity/Q846,Катар,Доха,арабский язык,катарский риал
+http://www.wikidata.org/entity/Q114,Кения,Найроби,английский язык,Кенийский шиллинг
+http://www.wikidata.org/entity/Q229,Кипр,Никосия,новогреческий язык,евро
+http://www.wikidata.org/entity/Q813,Киргизия,Бишкек,русский язык,киргизский сом
+http://www.wikidata.org/entity/Q710,Кирибати,Южная Тарава,английский язык,австралийский доллар
+http://www.wikidata.org/entity/Q148,Китайская Народная Республика,Пекин,путунхуа,китайский юань
+http://www.wikidata.org/entity/Q739,Колумбия,Богота,испанский язык,колумбийское песо
+http://www.wikidata.org/entity/Q970,Коморы,Морони,арабский язык,Франк Комор
+http://www.wikidata.org/entity/Q423,Корейская Народно-Демократическая Республика,Пхеньян,корейский язык,вона КНДР
+http://www.wikidata.org/entity/Q29999,Королевство Нидерландов,Амстердам,нидерландский язык,евро
+http://www.wikidata.org/entity/Q800,Коста-Рика,Сан-Хосе,испанский язык,костариканский колон
+http://www.wikidata.org/entity/Q1008,Кот-д’Ивуар,Ямусукро,французский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q241,Куба,Гавана,испанский язык,кубинское песо
+http://www.wikidata.org/entity/Q817,Кувейт,Кувейт,арабский язык,кувейтский динар
+http://www.wikidata.org/entity/Q819,Лаос,Вьентьян,лаосский язык,лаосский кип
+http://www.wikidata.org/entity/Q211,Латвия,Рига,латышский язык,евро
+http://www.wikidata.org/entity/Q1013,Лесото,Масеру,сесото,Лоти Лесото
+http://www.wikidata.org/entity/Q1014,Либерия,Монровия,английский язык,Либерийский доллар
+http://www.wikidata.org/entity/Q822,Ливан,Бейрут,арабский язык,ливанский фунт
+http://www.wikidata.org/entity/Q1016,Ливия,Триполи,арабский язык,Ливийский динар
+http://www.wikidata.org/entity/Q37,Литва,Вильнюс,литовский язык,евро
+http://www.wikidata.org/entity/Q347,Лихтенштейн,Вадуц,немецкий язык,швейцарский франк
+http://www.wikidata.org/entity/Q32,Люксембург,Люксембург,французский язык,евро
+http://www.wikidata.org/entity/Q1027,Маврикий,Порт-Луи,французский язык,Маврикийская рупия
+http://www.wikidata.org/entity/Q1025,Мавритания,Нуакшот,арабский язык,Мавританская угия
+http://www.wikidata.org/entity/Q1019,Мадагаскар,Антананариву,французский язык,Малагасийский ариари
+http://www.wikidata.org/entity/Q1020,Малави,Лилонгве,английский язык,Малавийская квача
+http://www.wikidata.org/entity/Q833,Малайзия,Куала-Лумпур,английский язык,малайзийский ринггит
+http://www.wikidata.org/entity/Q912,Мали,Бамако,французский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q826,Мальдивы,Мале,мальдивский язык,мальдивская руфия
+http://www.wikidata.org/entity/Q233,Мальта,Валлетта,английский язык,евро
+http://www.wikidata.org/entity/Q1028,Марокко,Рабат,арабский язык,Марокканский дирхам
+http://www.wikidata.org/entity/Q709,Маршалловы Острова,Маджуро,английский язык,доллар США
+http://www.wikidata.org/entity/Q96,Мексика,Мехико,испанский язык,мексиканское песо
+http://www.wikidata.org/entity/Q702,Микронезия,Паликир,английский язык,доллар США
+http://www.wikidata.org/entity/Q1029,Мозамбик,Мапуту,португальский язык,Мозамбикский метикал
+http://www.wikidata.org/entity/Q217,Молдавия,Кишинёв,румынский язык,молдавский лей
+http://www.wikidata.org/entity/Q235,Монако,Монако,французский язык,Монегасский франк
+http://www.wikidata.org/entity/Q711,Монголия,Улан-Батор,монгольский язык,монгольский тугрик
+http://www.wikidata.org/entity/Q836,Мьянма,Нейпьидо,бирманский язык,кьят
+http://www.wikidata.org/entity/Q1030,Намибия,Виндхук,английский язык,Доллар Намибии
+http://www.wikidata.org/entity/Q697,Науру,Ярен,английский язык,австралийский доллар
+http://www.wikidata.org/entity/Q837,Непал,Катманду,непальский язык,непальская рупия
+http://www.wikidata.org/entity/Q1032,Нигер,Ниамей,французский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q1033,Нигерия,Абуджа,английский язык,нигерийская найра
+http://www.wikidata.org/entity/Q811,Никарагуа,Манагуа,испанский язык,никарагуанская кордоба
+http://www.wikidata.org/entity/Q34020,Ниуэ,Алофи,английский язык,новозеландский доллар
+http://www.wikidata.org/entity/Q664,Новая Зеландия,Веллингтон,английский язык,новозеландский доллар
+http://www.wikidata.org/entity/Q20,Норвегия,Осло,нюнорск,норвежская крона
+http://www.wikidata.org/entity/Q878,Объединённые Арабские Эмираты,Абу-Даби,арабский язык,дирхам ОАЭ
+http://www.wikidata.org/entity/Q842,Оман,Маскат,арабский язык,оманский риал
+http://www.wikidata.org/entity/Q843,Пакистан,Исламабад,английский язык,пакистанская рупия
+http://www.wikidata.org/entity/Q695,Палау,Нгерулмуд,английский язык,доллар США
+http://www.wikidata.org/entity/Q804,Панама,Панама,испанский язык,доллар США
+http://www.wikidata.org/entity/Q691,Папуа — Новая Гвинея,Порт-Морсби,Хири-моту,Кина
+http://www.wikidata.org/entity/Q733,Парагвай,Асунсьон,гуарани,парагвайский гуарани
+http://www.wikidata.org/entity/Q419,Перу,Лима,испанский язык,перуанский новый соль
+http://www.wikidata.org/entity/Q36,Польша,Варшава,польский язык,польский злотый
+http://www.wikidata.org/entity/Q45,Португалия,Лиссабон,мирандский язык,евро
+http://www.wikidata.org/entity/Q790,Республика Гаити,Порт-о-Пренс,гаитянский креольский язык,гаитянский гурд
+http://www.wikidata.org/entity/Q971,Республика Конго,Браззавиль,французский язык,франк КФА BEAC
+http://www.wikidata.org/entity/Q884,Республика Корея,Сеул,корейский язык,южнокорейская вона
+http://www.wikidata.org/entity/Q221,Республика Македония,Скопье,македонский язык,македонский денар
+http://www.wikidata.org/entity/Q159,Россия,Москва,мокшанский язык,российский рубль
+http://www.wikidata.org/entity/Q1037,Руанда,Кигали,английский язык,Руандийский франк
+http://www.wikidata.org/entity/Q218,Румыния,Бухарест,румынский язык,румынский лей
+http://www.wikidata.org/entity/Q792,Сальвадор,Сан-Сальвадор,испанский язык,доллар США
+http://www.wikidata.org/entity/Q683,Самоа,Апиа,английский язык,Самоанская тала
+http://www.wikidata.org/entity/Q238,Сан-Марино,Сан-Марино,итальянский язык,евро
+http://www.wikidata.org/entity/Q1039,Сан-Томе и Принсипи,Сан-Томе,португальский язык,Добра Сан-Томе и Принсипи
+http://www.wikidata.org/entity/Q851,Саудовская Аравия,Эр-Рияд,арабский язык,саудовский риял
+http://www.wikidata.org/entity/Q1050,Свазиленд,Мбабане,свати,Свазилендский лилангени
+http://www.wikidata.org/entity/Q1050,Свазиленд,Лобамба,свати,Свазилендский лилангени
+http://www.wikidata.org/entity/Q1042,Сейшелы,Виктория,английский язык,сейшельская рупия
+http://www.wikidata.org/entity/Q1041,Сенегал,Дакар,французский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q757,Сент-Винсент и Гренадины,Кингстаун,испанский язык,восточно-карибский доллар
+http://www.wikidata.org/entity/Q763,Сент-Китс и Невис,Бастер,английский язык,восточно-карибский доллар
+http://www.wikidata.org/entity/Q760,Сент-Люсия,Кастри,английский язык,восточно-карибский доллар
+http://www.wikidata.org/entity/Q403,Сербия,Белград,сербский язык,сербский динар
+http://www.wikidata.org/entity/Q334,Сингапур,Сингапур,малайский язык,сингапурский доллар
+http://www.wikidata.org/entity/Q858,Сирия,Дамаск,арабский язык,сирийский фунт
+http://www.wikidata.org/entity/Q214,Словакия,Братислава,словацкий язык,евро
+http://www.wikidata.org/entity/Q215,Словения,Любляна,словенский язык,евро
+http://www.wikidata.org/entity/Q30,Соединённые Штаты Америки,Вашингтон,английский язык,доллар США
+http://www.wikidata.org/entity/Q685,Соломоновы Острова,Хониара,английский язык,Доллар Соломоновых Островов
+http://www.wikidata.org/entity/Q1045,Сомали,Могадишо,сомалийский язык,сомалийский шиллинг
+http://www.wikidata.org/entity/Q1049,Судан,Хартум,английский язык,Суданский фунт
+http://www.wikidata.org/entity/Q730,Суринам,Парамарибо,нидерландский язык,суринамский доллар
+http://www.wikidata.org/entity/Q1044,Сьерра-Леоне,Фритаун,английский язык,Леоне
+http://www.wikidata.org/entity/Q863,Таджикистан,Душанбе,таджикский язык,таджикский сомони
+http://www.wikidata.org/entity/Q869,Таиланд,Бангкок,тайский язык,тайский бат
+http://www.wikidata.org/entity/Q924,Танзания,Додома,английский язык,Танзанийский шиллинг
+http://www.wikidata.org/entity/Q945,Того,Ломе,французский язык,Франк КФА BCEAO
+http://www.wikidata.org/entity/Q678,Тонга,Нукуалофа,английский язык,Тонганская паанга
+http://www.wikidata.org/entity/Q754,Тринидад и Тобаго,Порт-оф-Спейн,английский язык,доллар Тринидада и Тобаго
+http://www.wikidata.org/entity/Q672,Тувалу,Фунафути,английский язык,Доллар Тувалу
+http://www.wikidata.org/entity/Q948,Тунис,Тунис,арабский язык,Тунисский динар
+http://www.wikidata.org/entity/Q874,Туркмения,Ашхабад,русский язык,туркменский манат
+http://www.wikidata.org/entity/Q43,Турция,Анкара,турецкий язык,турецкая лира
+http://www.wikidata.org/entity/Q1036,Уганда,Кампала,английский язык,Угандийский шиллинг
+http://www.wikidata.org/entity/Q265,Узбекистан,Ташкент,узбекский язык,узбекский сум
+http://www.wikidata.org/entity/Q212,Украина,Киев,украинский язык,гривна
+http://www.wikidata.org/entity/Q77,Уругвай,Монтевидео,испанский язык,уругвайское песо
+http://www.wikidata.org/entity/Q712,Фиджи,Сува,фиджийский хинди,Доллар Фиджи
+http://www.wikidata.org/entity/Q928,Филиппины,Манила,английский язык,филиппинское песо
+http://www.wikidata.org/entity/Q33,Финляндия,Хельсинки,финский язык,евро
+http://www.wikidata.org/entity/Q148540,Флорентийская республика,Флоренция,Тосканский диалект,Флорин
+http://www.wikidata.org/entity/Q142,Франция,Париж,французский язык,евро
+http://www.wikidata.org/entity/Q224,Хорватия,Загреб,хорватский язык,хорватская куна
+http://www.wikidata.org/entity/Q929,Центральноафриканская Республика,Банги,французский язык,франк КФА BEAC
+http://www.wikidata.org/entity/Q657,Чад,Нджамена,французский язык,франк КФА BEAC
+http://www.wikidata.org/entity/Q236,Черногория,Подгорица,боснийский язык,евро
+http://www.wikidata.org/entity/Q213,Чехия,Прага,чешский язык,чешская крона
+http://www.wikidata.org/entity/Q298,Чили,Сантьяго,испанский язык,чилийское песо
+http://www.wikidata.org/entity/Q39,Швейцария,Берн,немецкий язык,швейцарский франк
+http://www.wikidata.org/entity/Q34,Швеция,Стокгольм,шведский язык,шведская крона
+http://www.wikidata.org/entity/Q854,Шри-Ланка,Коломбо,тамильский язык,шри-ланкийская рупия
+http://www.wikidata.org/entity/Q854,Шри-Ланка,Шри-Джаяварденепура-Котте,тамильский язык,шри-ланкийская рупия
+http://www.wikidata.org/entity/Q736,Эквадор,Кито,испанский язык,доллар США
+http://www.wikidata.org/entity/Q983,Экваториальная Гвинея,Малабо,португальский язык,франк КФА BEAC
+http://www.wikidata.org/entity/Q986,Эритрея,Асмэра,английский язык,эритрейская накфа
+http://www.wikidata.org/entity/Q191,Эстония,Таллин,эстонский язык,евро
+http://www.wikidata.org/entity/Q115,Эфиопия,Аддис-Абеба,амхарский язык,эфиопский быр
+http://www.wikidata.org/entity/Q258,Южно-Африканская Республика,Претория,английский язык,южноафриканский ранд
+http://www.wikidata.org/entity/Q258,Южно-Африканская Республика,Кейптаун,зулу,южноафриканский ранд
+http://www.wikidata.org/entity/Q258,Южно-Африканская Республика,Блумфонтейн,английский язык,южноафриканский ранд
+http://www.wikidata.org/entity/Q958,Южный Судан,Джуба,английский язык,Южносуданский фунт
+http://www.wikidata.org/entity/Q766,Ямайка,Кингстон,английский язык,ямайский доллар
+http://www.wikidata.org/entity/Q17,Япония,Токио,японский язык,японская йена
