@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Task.1 - Albums</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script language="javascript">
-    function runTest() {
-    	filterTable("albums_table", {year: "2000"});
-    	verifyTable("albums_table", 5, ["Q935417", "Q1143517", "Q2304612"], "Case #0");
-    	
-    	filterTable("albums_table", {year: "20", genre: "gothic"});
-    	verifyTable("albums_table", 2, ["Q1066048", "Q2523001"], "Case #1");
+	<meta charset="UTF-8">
+	<title>Task.1 - Albums</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script language="javascript">
+	function runTest() {
+		filterTable("albums_table", {year: "2000"});
+		verifyTable("albums_table", 5, ["Q935417", "Q1143517", "Q2304612"], "Case #0");
+		
+		filterTable("albums_table", {year: "20", genre: "gothic"});
+		verifyTable("albums_table", 2, ["Q1066048", "Q2523001"], "Case #1");
 
-    	filterTable("albums_table", {genre: "o", performer: "The"});
-    	verifyTable("albums_table", 8, ["Q535579", "Q1066401", "Q1027741"], "Case #2");
+		filterTable("albums_table", {genre: "o", performer: "The"});
+		verifyTable("albums_table", 8, ["Q535579", "Q1066401", "Q1027741"], "Case #2");
 
-    	filterTable("albums_table", {album: "donnu", year: "pop", performer: "Me"});
-    	verifyTable("albums_table", 0, [], "Case #3");
-    }
+		filterTable("albums_table", {album: "donnu", year: "pop", performer: "Me"});
+		verifyTable("albums_table", 0, [], "Case #3");
+	}
 
-    function verifyTable(tableId, numVisibleRows, ids, message) {
-    	var visibleRows = document.querySelectorAll("#"+tableId+" tr:not(.hidden)");
-    	var visibleRowsCount = visibleRows.length;
-    	if (visibleRowsCount-1 != numVisibleRows) {
-    		console.error("-", message, "Visible rows:", visibleRowsCount-1,", expected:", numVisibleRows);
-    		return;
-    	}
+	function verifyTable(tableId, numVisibleRows, ids, message) {
+		var visibleRows = document.querySelectorAll("#"+tableId+" tr:not(.hidden)");
+		var visibleRowsCount = visibleRows.length;
+		if (visibleRowsCount-1 != numVisibleRows) {
+			console.error("-", message, "Visible rows:", visibleRowsCount-1,", expected:", numVisibleRows);
+			return;
+		}
 
-    	for(let i=0; i<ids.length; i++) {
-    		let itemId = ids[i];
-    		let itemUrl = visibleRows[i+1].children[0].innerText;
-    		if (itemUrl.indexOf(itemId) < 0) {
-	    		console.error("-", message, "Item", i+1, "has invalid ID:", itemUrl,", expected:", itemId);
-	    		return;
-    		}
-    	}
+		for(let i=0; i<ids.length; i++) {
+			let itemId = ids[i];
+			let itemUrl = visibleRows[i+1].children[0].innerText;
+			if (itemUrl.indexOf(itemId) < 0) {
+				console.error("-", message, "Item", i+1, "has invalid ID:", itemUrl,", expected:", itemId);
+				return;
+			}
+		}
 
 		console.log("+", message);
-    }
+	}
 
-    </script>
+	</script>
 </head>
 <body>
 
