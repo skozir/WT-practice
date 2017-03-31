@@ -1,10 +1,56 @@
-<th>
-	<td>country_url</td>
-	<td>country</td>
-	<td>capital</td>
-	<td>language</td>
-	<td>currency</td>
-</th>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task.1 - Albums</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script language="javascript">
+	function runTest() {
+		filterTable("countries_table", {});
+		verifyTable("countries_table", 199, [], "Case #0");
+
+		filterTable("countries_table", {currency: "евро"});
+		verifyTable("countries_table", 22, ["Q40", "Q228", "Q31", "Q183"], "Case #1");
+		
+		filterTable("countries_table", {language: "испанский", religion: "christianity", country: "ия"});
+		verifyTable("countries_table", 2, ["Q750", "Q739"], "Case #2");
+
+		filterTable("countries_table", {currency: "доллар"});
+		verifyTable("countries_table", 31, [], "Case #3");
+	}
+
+	function verifyTable(tableId, numVisibleRows, ids, message) {
+		var visibleRows = document.querySelectorAll("#"+tableId+" tr:not(.hidden)");
+		var visibleRowsCount = visibleRows.length;
+		if (visibleRowsCount-1 != numVisibleRows) {
+			console.error("-", message, "Visible rows:", visibleRowsCount-1,", expected:", numVisibleRows);
+			return;
+		}
+
+		for(let i=0; i<ids.length; i++) {
+			let itemId = ids[i];
+			let itemUrl = visibleRows[i+1].children[0].innerText;
+			if (itemUrl.indexOf(itemId) < 0) {
+				console.error("-", message, "Item", i+1, "has invalid ID:", itemUrl,", expected:", itemId);
+				return;
+			}
+		}
+
+		console.log("+", message);
+	}
+
+	</script>
+</head>
+<body>
+
+<table id="countries_table">
+<tr>
+	<th>country_url</th>
+	<th>country</th>
+	<th>capital</th>
+	<th>language</th>
+	<th>currency</th>
+</tr>
 <tr>
 	<td data-field-name="country_url">http://www.wikidata.org/entity/Q408</td>
 	<td data-field-name="country">Австралия</td>
@@ -144,13 +190,6 @@
 	<td data-field-name="capital">София</td>
 	<td data-field-name="language">болгарский язык</td>
 	<td data-field-name="currency">болгарский лев</td>
-</tr>
-<tr>
-	<td data-field-name="country_url">http://www.wikidata.org/entity/Q750</td>
-	<td data-field-name="country">Боливия</td>
-	<td data-field-name="capital">Ла-Пас</td>
-	<td data-field-name="language">испанский язык</td>
-	<td data-field-name="currency">боливиано</td>
 </tr>
 <tr>
 	<td data-field-name="country_url">http://www.wikidata.org/entity/Q750</td>
@@ -1405,3 +1444,6 @@
 	<td data-field-name="language">японский язык</td>
 	<td data-field-name="currency">японская йена</td>
 </tr>
+</table>
+</body>
+</html>
