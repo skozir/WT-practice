@@ -34,3 +34,27 @@
 ```javascript
 filterTable("albums_table", {year: "1980", genre: "rock"});
 ```
+
+Задача 2
+--------
+
+Необходимо написать класс `SwitchButton`, который будет инкапсулировать визуальный компонент кнопки-переключателя. В HTML коде странице должен быть элемент:
+
+```html
+<div class="switch-button" id="chatPermissionsButton" data-options="all;friends;friends of friends;only me" data-default-value="all">
+</div>
+```
+
+Атрибут `data-options` содержит список возможных надписей на кнопке, разделённые символом ';'.
+
+Атрибут `data-default-value` (необязательный) - надпись, которая должна быть видна на кнопке по умолчанию.
+
+Ваш класс `SwitchButton` должен создавать эту кнопку (HTML элемент `<input type="button"/>`) внутри `<div>` элемента следующим JavaScript кодом:
+
+```javascript
+var button = new SwitchButton("chatPermissionsButton");
+button.getValue(); //Получить текущий текст на кнопке;
+button.switchValue(); //Переключить текст на кнопке, выбирая следующий из списка "options";
+button.getDiv(); //Получить элемент DIV, внутри которого располагается кнопка;
+```
+
