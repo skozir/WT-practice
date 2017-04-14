@@ -41,7 +41,10 @@ filterTable("albums_table", {year: "1980", genre: "rock"});
 Необходимо написать класс `SwitchButton`, который будет инкапсулировать визуальный компонент кнопки-переключателя. В HTML коде странице должен быть элемент:
 
 ```html
-<div class="switch-button" id="chatPermissionsButton" data-options="all;friends;friends of friends;only me" data-default-value="all">
+<div class="switch-button"
+     id="chatPermissionsButton"
+     data-options="all;friends;friends of friends;only me"
+     data-default-value="all">
 </div>
 ```
 
@@ -54,12 +57,13 @@ filterTable("albums_table", {year: "1980", genre: "rock"});
 ```javascript
 var button = new SwitchButton("chatPermissionsButton");
 button.getValue(); //Получить текущий текст на кнопке;
-button.switchValue(); //Переключить текст на кнопке, выбирая следующий из списка "options";
+button.setValue("friends"); //Изменить текст на кнопке;
 button.getDiv(); //Получить элемент DIV, внутри которого располагается кнопка;
+button.switchValue(); //Переключить текст на кнопке, выбирая следующий из списка "options";
 ```
 
 Текст на кнопке должен определяться следующим образом:
-* Если в `localStorage` есть ключ `SwitchButton_` + `ID кнопки`, то значение из этого ключа используется на кнопке;
+* Если в `localStorage` есть ключ `'SwitchButton_'` + `ID кнопки`, то значение из этого ключа используется на кнопке;
 * Если есть аттрибут `data-default-value`, то он используется на кнопке;
-* Если есть аттрибут `data-default-value`, то используется первый вариант из этого списка;
+* Если есть аттрибут `data-options`, то используется первый вариант из этого списка;
 * Если ничего не подошло, то использовать `None`.
