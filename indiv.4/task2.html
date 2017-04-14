@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Task.1 - Albums</title>
+	<title>Task.2 - SwitchButton</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script language="javascript">
 	function runTask2() {
@@ -14,7 +14,7 @@
 		engineTypeButton.switchValue();
 		assertEqual("diesel", engineTypeButton.getValue(), "Case #0: switchValue() //2");
 		assertEqual(document.getElementById("engineTypeButton"), engineTypeButton.getDiv(), "Case #0: getDiv()");
-		assertEqual("INPUT", engineTypeButton.getDiv().children[0].tagName, "Case #0: <input/>");
+		assertEqual("INPUT", engineTypeButton.getDiv().firstChild.tagName, "Case #0: <input/>");
 
 		window.localStorage.removeItem("singleChoiseButton_SwitchButton");
 		var singleChoiseButton = new SwitchButton("singleChoiseButton");
@@ -27,9 +27,8 @@
 		assertEqual("B", bloodGroupButton.getValue(), "Case #2: getValue()");
 		bloodGroupButton.setValue("0");
 		assertEqual("0", bloodGroupButton.getValue(), "Case #2: setValue()");
-		assertEqual("0", bloodGroupButton.getDiv().children[0].innerText, "Case #2: setValue() in HTML");
+		assertEqual("0", bloodGroupButton.getDiv().firstChild.innerText, "Case #2: setValue() in HTML");
 
-		window.localStorage.setItem("noneButton_SwitchButton", "B");
 		var noneButton = new SwitchButton("noneButton");
 		assertEqual("None", noneButton.getValue(), "Case #3: getValue()");
 	}
