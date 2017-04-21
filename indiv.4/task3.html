@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task.2 - SwitchButton enhanced</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script language="javascript">
+	function runTask3() {
+		window.localStorage.removeItem("engineTypeButton_SwitchButton");
+		window.localStorage.removeItem("singleChoiseButton_SwitchButton");
+		window.localStorage.setItem("bloodGroupButton_SwitchButton", "B");
+
+		SwitchButton.createButtons();
+
+		var engineTypeButton = document.getElementById("engineTypeButton").firstChild;
+		assertEqual("electricity", engineTypeButton.innerText, "Case #0: getValue()");
+		engineTypeButton.click();
+		assertEqual("any", engineTypeButton.innerText, "Case #0: switchValue() on click //1");
+		engineTypeButton.click();
+		assertEqual("diesel", engineTypeButton.innerText, "Case #0: switchValue() on click //2");
+
+		var singleChoiseButton = document.getElementById("singleChoiseButton").firstChild;
+		assertEqual("uno", singleChoiseButton.innerText, "Case #1: getValue()");
+		singleChoiseButton.click();
+		assertEqual("uno", singleChoiseButton.getValue(), "Case #1: switchValue() on click");
+
+		var bloodGroupButton = document.getElementById("bloodGroupButton").firstChild;
+		assertEqual("B", bloodGroupButton.innerText, "Case #2: getValue()");
+
+		var noneButton = document.getElementById("noneButton");
+		assertEqual("None", noneButton.innerText, "Case #3: getValue()");
+	}
+
+	function assertEqual(expectedVal, actualVal, message) {
+		if(expectedVal == actualVal) {
+			console.log("+", message);
+		}
+		else {
+			console.error("-", message, "(Expected:", expectedVal, "; Actual:", actualVal, ")");
+		}
+	}
+	</script>
+</head>
+<body>
+
+<p>
+	Button 1: <div id="engineTypeButton" style="display: inline"
+	               data-options="any;diesel;gasoline;electricity"
+                   data-default-value="electricity"></div>
+</p>
+<p>
+	Button 2: <div id="singleChoiseButton" style="display: inline"
+	               data-options="uno"></div>
+</p>
+<p>
+	Button 3: <div id="bloodGroupButton" style="display: inline"
+	               data-options="0;A;B;AB"></div>
+</p>
+<p>
+	Button 4: <div id="noneButton" style="display: inline"></div>
+</p>
+
+</body>
+</html>
