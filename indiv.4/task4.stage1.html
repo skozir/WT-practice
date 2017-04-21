@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task.4 - 15 puzzle</title>
+	<script type="text/javascript">
+	function assertEqual(expectedVal, actualVal, message) {
+		if(expectedVal == actualVal) {
+			console.log("+", message);
+		}
+		else {
+			console.error("-", message, "(Expected:", expectedVal, "; Actual:", actualVal, ")");
+		}
+	}
+
+	function testTask4() {
+		var puzzle = new Puzzle15();
+		puzzle.setState([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 0]]);
+		assertEqual(puzzle.isSolved(), true, "Case 0: Puzzle initial state is solved");
+
+		puzzle.resetState();
+		assertEqual(puzzle.isSolved(), true, "Case 1: Reseted puzzle is solved");
+
+		assertEqual(puzzle.canMakeTurn(2, 3), true, "Case 2: It's possible to move tile in row 3 and column 4");
+		assertEqual(puzzle.canMakeTurn(3, 2), true, "Case 3: It's possible to move tile in row 4 and column 3");
+		assertEqual(puzzle.canMakeTurn(1, 1), false, "Case 4: It's impossible to move tile in row 2 and column 2");
+		assertEqual(puzzle.canMakeTurn(0, 0), false, "Case 5: It's possible to move tile in row 1 and column 1");
+		assertEqual(puzzle.canMakeTurn(3, 3), false, "Case 6: It's possible to move empty tile");
+
+		assertEqual(puzzle.makeTurn(1, 1), false, "case 7: Make turn failed (as expected)");
+		assertEqual(puzzle.makeTurn(2, 3), true, "case 8: Make turn succeeded");
+		puzzle.makeTurn(3, 3);
+		assertEqual(puzzle.isSolved(), true, "Case 9: Puzzle is solved in two moves");
+
+		puzzle.shuffleState();
+		var emptyCellCoordinates = puzzle.emptyCell;
+		assertEqual(emptyCellCoordinates[0]>=0 && emptyCellCoordinates[0]<=3, true, "case 10.1: Empty cell has valid row number");
+		assertEqual(emptyCellCoordinates[1]>=0 && emptyCellCoordinates[1]<=3, true, "case 10.2: Empty cell has valid column number");
+	}
+	</script>
+
+</head>
+<body>
+
+<h2>Task.4 - "15 Puzzle"</h2>
+
+</body>
+</html>
